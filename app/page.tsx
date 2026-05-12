@@ -5,7 +5,6 @@ import PainPoints from "@/components/sections/PainPoints";
 import Solutions from "@/components/sections/Solutions";
 import Differentiator from "@/components/sections/Differentiator";
 import HowItWorks from "@/components/sections/HowItWorks";
-import ProblemsWePrevented from "@/components/sections/ProblemsWePrevented";
 import CaseStudies from "@/components/sections/CaseStudies";
 import Testimonials from "@/components/sections/Testimonials";
 import Authority from "@/components/sections/Authority";
@@ -21,8 +20,7 @@ export default function Home() {
         <Solutions />
         <Differentiator />
         <HowItWorks />
-        <ProblemsWePrevented />
-        <CaseStudies />
+<CaseStudies />
         <Testimonials />
         <Authority />
         <FinalCTA />

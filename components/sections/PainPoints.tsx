@@ -1,9 +1,35 @@
 "use client";
 
-import { motion } from "framer-motion";
-import { useInView } from "framer-motion";
+import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { painPoints } from "@/lib/data/pain-points";
+
+const icons = [
+  // Clock — downtime
+  <svg key="clock" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+    <circle cx="12" cy="12" r="9" />
+    <polyline points="12 7 12 12 15.5 14.5" />
+  </svg>,
+  // Document — bureaucracy
+  <svg key="doc" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+    <polyline points="14 2 14 8 20 8" />
+    <line x1="16" y1="13" x2="8" y2="13" />
+    <line x1="16" y1="17" x2="8" y2="17" />
+  </svg>,
+  // Globe — global ops
+  <svg key="globe" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+    <circle cx="12" cy="12" r="9" />
+    <path d="M12 3a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+    <line x1="3" y1="12" x2="21" y2="12" />
+  </svg>,
+  // Alert triangle — unpreparedness
+  <svg key="alert" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z" />
+    <line x1="12" y1="9" x2="12" y2="13" />
+    <line x1="12" y1="17" x2="12.01" y2="17" />
+  </svg>,
+];
 
 export default function PainPoints() {
   const ref = useRef(null);
@@ -48,7 +74,7 @@ export default function PainPoints() {
               <div className="w-0.5 bg-vow-primary/30 group-hover:bg-vow-primary rounded-full flex-shrink-0 transition-colors" />
 
               <div>
-                <div className="text-2xl mb-3">{point.icon}</div>
+                <div className="text-vow-primary mb-3">{icons[i]}</div>
                 <h3 className="text-vow-text font-semibold text-lg mb-2 leading-snug">
                   {point.headline}
                 </h3>

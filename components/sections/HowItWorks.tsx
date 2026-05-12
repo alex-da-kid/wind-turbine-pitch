@@ -16,12 +16,12 @@ const steps = [
   {
     number: "03",
     title: "Executamos a mobilização",
-    body: "Documentação, viagens, suporte e acompanhamento completo. Cada detalhe gerenciado pela nossa equipe.",
+    body: "Vistos, passagens, documentação e logística coordenados em paralelo. Sua equipe embarca no prazo, sem surpresas.",
   },
   {
     number: "04",
-    title: "Acompanhamos sua equipe",
-    body: "Suporte contínuo durante toda a operação. Antes do embarque, durante e no retorno.",
+    title: "Acompanhamos em campo",
+    body: "Com a equipe no destino, continuamos ativos: imprevistos, remarcações e emergências resolvidos em tempo real.",
   },
 ];
 
@@ -87,34 +87,6 @@ export default function HowItWorks() {
           </div>
         </div>
 
-        {/* Bottom CTA */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5, delay: 0.4 }}
-          className="text-center mt-16"
-        >
-          <a
-            href="#contato"
-            className="inline-flex items-center gap-2 text-vow-primary hover:text-vow-primary-hover font-semibold text-sm transition-colors"
-          >
-            Iniciar uma conversa
-            <svg
-              className="w-4 h-4"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              strokeWidth={2}
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M17 8l4 4m0 0l-4 4m4-4H3"
-              />
-            </svg>
-          </a>
-        </motion.div>
       </div>
     </section>
   );

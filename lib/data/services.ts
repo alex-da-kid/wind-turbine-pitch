@@ -11,14 +11,14 @@ export const services: ServiceItem[] = [
     id: "immigration",
     title: "Imigração Corporativa",
     description:
-      "Estruturamos processos migratórios para empresas do setor eólico com foco em agilidade, conformidade e mitigação de riscos.",
+      "Estruturamos processos migratórios para empresas do setor eólico com foco em agilidade, conformidade e mitigação de riscos. Com especialização no mercado americano, aceleramos vistos e reduzimos interrupções operacionais.",
     items: [
       "Vistos de trabalho temporário",
+      "Estratégia migratória para os EUA",
       "Suporte consular especializado",
-      "Análise estratégica migratória",
-      "Preparação documental completa",
+      "Gestão de documentação e compliance",
       "Orientação pré-embarque",
-      "Suporte em entrevistas consulares",
+      "Remobilização ágil em casos de urgência",
     ],
   },
   {
@@ -36,25 +36,10 @@ export const services: ServiceItem[] = [
     ],
   },
   {
-    id: "usa",
-    title: "Mobilização para os Estados Unidos",
-    description:
-      "O mercado americano segue em forte expansão para empresas de serviços do setor eólico. Apoiamos empresas brasileiras na mobilização de equipes técnicas para operações nos EUA, reduzindo riscos migratórios e acelerando processos.",
-    items: [
-      "Estratégia migratória para o mercado americano",
-      "Vistos de trabalho para técnicos eólicos",
-      "Gestão de documentação e compliance",
-      "Logística completa EUA",
-      "Suporte local e acompanhamento",
-      "Remobilização ágil em casos de urgência",
-    ],
-    highlight: true,
-  },
-  {
     id: "operational",
-    title: "Suporte Operacional Real",
+    title: "Atendimento Direto 24/7",
     description:
-      "Nossa equipe atua como uma extensão do seu departamento de mobilização internacional — com atendimento humano, não automatizado.",
+      "Nossa equipe atua como uma extensão do seu departamento de mobilização internacional, com atendimento humano, não automatizado.",
     items: [
       "Atendimento humano direto",
       "Suporte emergencial 24/7",

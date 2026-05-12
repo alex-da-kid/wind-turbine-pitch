@@ -65,28 +65,18 @@ export default function Hero() {
           className="flex flex-col sm:flex-row items-center justify-center gap-4"
         >
           <a
-            href="#contato"
+            href="#servicos"
             className="w-full sm:w-auto bg-vow-primary hover:bg-vow-primary-hover text-white font-semibold px-8 py-4 rounded-lg transition-all duration-200 hover:shadow-[0_0_30px_rgba(29,111,164,0.3)] text-center"
           >
-            Agendar Reunião
+            Ver Nossos Serviços
           </a>
           <a
-            href="#contato"
+            href="#cases"
             className="w-full sm:w-auto border border-vow-border hover:border-vow-primary text-vow-text hover:text-vow-primary font-semibold px-8 py-4 rounded-lg transition-all duration-200 text-center"
           >
-            Falar com Especialista
+            Ver Estudos de Caso
           </a>
         </motion.div>
-
-        {/* Micro text */}
-        <motion.p
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.6, delay: 0.5 }}
-          className="text-vow-muted text-xs mt-6"
-        >
-          Atendimento especializado para operações internacionais no mercado americano.
-        </motion.p>
 
         {/* Stats row */}
         <motion.div
@@ -110,16 +100,6 @@ export default function Hero() {
         </motion.div>
       </div>
 
-      {/* Scroll indicator */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 1 }}
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2"
-      >
-        <span className="text-vow-muted text-xs">Scroll</span>
-        <div className="w-px h-8 bg-gradient-to-b from-vow-muted to-transparent" />
-      </motion.div>
     </section>
   );
 }

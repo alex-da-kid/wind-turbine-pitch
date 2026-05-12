@@ -30,7 +30,7 @@ export default function Solutions() {
         </div>
 
         {/* Services grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {services.map((service, i) => (
             <motion.div
               key={service.id}
@@ -38,23 +38,9 @@ export default function Solutions() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-60px" }}
               transition={{ duration: 0.5, delay: i * 0.1 }}
-              className={`relative rounded-xl p-8 border transition-all group ${
-                service.highlight
-                  ? "bg-vow-primary/10 border-vow-primary/50 hover:border-vow-primary"
-                  : "bg-vow-surface border-vow-border hover:border-vow-primary/40"
-              }`}
+              className="relative rounded-xl p-8 border bg-vow-surface border-vow-border hover:border-vow-primary/40 transition-all group"
             >
-              {service.highlight && (
-                <div className="absolute top-4 right-4">
-                  <span className="bg-vow-primary text-white text-xs font-semibold px-3 py-1 rounded-full">
-                    Mercado EUA
-                  </span>
-                </div>
-              )}
-
-              <h3
-                className={`text-xl font-bold mb-3 ${service.highlight ? "text-vow-text" : "text-vow-text"}`}
-              >
+              <h3 className="text-xl font-bold mb-3 text-vow-text">
                 {service.title}
               </h3>
               <p className="text-vow-muted text-sm leading-relaxed mb-6">
@@ -64,9 +50,7 @@ export default function Solutions() {
               <ul className="space-y-2">
                 {service.items.map((item) => (
                   <li key={item} className="flex items-start gap-2.5">
-                    <span
-                      className={`w-1 h-1 rounded-full mt-2 flex-shrink-0 ${service.highlight ? "bg-vow-primary" : "bg-vow-primary/60"}`}
-                    />
+                    <span className="w-1 h-1 rounded-full mt-2 flex-shrink-0 bg-vow-primary/60" />
                     <span className="text-vow-muted text-sm">{item}</span>
                   </li>
                 ))}

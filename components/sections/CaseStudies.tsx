@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Link from "next/link";
 import { caseStudies } from "@/lib/data/case-studies";
 
 export default function CaseStudies() {
@@ -87,19 +88,23 @@ export default function CaseStudies() {
                   {study.outcome}
                 </p>
               </div>
+
+              {/* Link */}
+              <div className="pt-5 mt-2">
+                <Link
+                  href={`/casos/${study.slug}`}
+                  className="inline-flex items-center gap-1.5 text-vow-primary hover:text-vow-primary-hover text-xs font-semibold transition-colors"
+                >
+                  Ler caso completo
+                  <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                  </svg>
+                </Link>
+              </div>
             </motion.div>
           ))}
         </div>
 
-        {/* Placeholder notice */}
-        <motion.p
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          className="text-center text-vow-muted/50 text-xs mt-8 italic"
-        >
-          * Conteúdo placeholder — substitua pelos seus cases reais antes do lançamento.
-        </motion.p>
       </div>
     </section>
   );

@@ -3,9 +3,9 @@
 import { motion } from "framer-motion";
 
 const trustPoints = [
-  "Integração real entre imigração e logística — não apenas vistos, não apenas viagens.",
-  "Suporte humano genuíno — você fala com um especialista, não com um bot.",
-  "Presença no mercado americano — entendemos os processos, os consulados e a operação local.",
+  "Integração real entre imigração e logística. Não apenas vistos, não apenas viagens.",
+  "Equipe trilingue em português, inglês e espanhol. Comunicamos com todos os lados da operação.",
+  "Presença no mercado americano. Entendemos os processos, os consulados e a operação local.",
 ];
 
 export default function Differentiator() {
@@ -33,8 +33,8 @@ export default function Differentiator() {
               transition={{ duration: 0.5 }}
               className="text-3xl md:text-4xl lg:text-5xl font-bold text-vow-text leading-tight mb-6"
             >
-              Não somos uma{" "}
-              <span className="text-vow-primary">agência tradicional.</span>
+              Operamos como{" "}
+              <span className="text-vow-primary">parte da sua equipe.</span>
             </motion.h2>
             <motion.p
               initial={{ opacity: 0, y: 20 }}
@@ -55,7 +55,7 @@ export default function Differentiator() {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="text-vow-muted text-base leading-relaxed"
             >
-              Nosso papel é garantir que sua equipe esteja pronta para operar —
+              Nosso papel é garantir que sua equipe esteja pronta para operar:
               no prazo, com segurança e com suporte contínuo.
             </motion.p>
           </div>
