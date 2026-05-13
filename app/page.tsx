@@ -5,9 +5,11 @@ import PainPoints from "@/components/sections/PainPoints";
 import Solutions from "@/components/sections/Solutions";
 import Differentiator from "@/components/sections/Differentiator";
 import HowItWorks from "@/components/sections/HowItWorks";
+import Commitment from "@/components/sections/Commitment";
 import CaseStudies from "@/components/sections/CaseStudies";
 import Testimonials from "@/components/sections/Testimonials";
 import Authority from "@/components/sections/Authority";
+import Team from "@/components/sections/Team";
 import FinalCTA from "@/components/sections/FinalCTA";
 
 export default function Home() {
@@ -20,9 +22,11 @@ export default function Home() {
         <Solutions />
         <Differentiator />
         <HowItWorks />
-<CaseStudies />
+        <Commitment />
+        <CaseStudies />
         <Testimonials />
         <Authority />
+        <Team />
         <FinalCTA />
       </main>
       <Footer />

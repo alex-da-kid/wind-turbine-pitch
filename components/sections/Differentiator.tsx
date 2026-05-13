@@ -6,6 +6,7 @@ const trustPoints = [
   "Integração real entre imigração e logística. Não apenas vistos, não apenas viagens.",
   "Equipe trilingue em português, inglês e espanhol. Comunicamos com todos os lados da operação.",
   "Presença no mercado americano. Entendemos os processos, os consulados e a operação local.",
+  "Modelo de trabalho alinhado aos seus resultados. Se a sua operação não funciona, a nossa também não.",
 ];
 
 export default function Differentiator() {
