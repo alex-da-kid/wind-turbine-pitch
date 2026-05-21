@@ -1,13 +1,22 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
 
-const logoPlaceholders = [
-  "Empresa Eólica 1",
-  "Empresa Eólica 2",
-  "Empresa Eólica 3",
-  "Empresa Eólica 4",
-  "Empresa Eólica 5",
+const logos = [
+  { file: "Logo-Ad-Comp.svg", name: "Ad Comp" },
+  { file: "Logo-All-American-Wind.svg", name: "All American Wind" },
+  { file: "Logo-Appia.svg", name: "Appia" },
+  { file: "Logo-Cotech-Group.svg", name: "Cotech Group" },
+  { file: "Logo-Gwind.svg", name: "Gwind" },
+  { file: "Logo-MS.svg", name: "MS" },
+  { file: "Logo-Mega-Wind.svg", name: "Mega Wind" },
+  { file: "Logo-Pronto-Solutions.svg", name: "Pronto Solutions" },
+  { file: "Logo-Siemens-Energy.svg", name: "Siemens Energy" },
+  { file: "Logo-Tech-Wind.svg", name: "Tech Wind" },
+  { file: "Logo-WSF.svg", name: "WSF" },
+  { file: "Logo-WTC.svg", name: "WTC" },
+  { file: "Logo-Wind-Com.svg", name: "Wind Com" },
 ];
 
 export default function Authority() {
@@ -42,20 +51,24 @@ export default function Authority() {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className=""
         >
           <div className="flex flex-wrap items-center justify-center gap-8">
-            {logoPlaceholders.map((name, i) => (
+            {logos.map(({ file, name }, i) => (
               <motion.div
-                key={name}
+                key={file}
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 viewport={{ once: true }}
-                transition={{ delay: i * 0.08 }}
-                className="bg-vow-surface border border-vow-border rounded-lg px-6 py-4 text-vow-muted/40 text-sm font-medium italic"
-                title="Substitua pelo logo real"
+                transition={{ delay: i * 0.06 }}
+                className="bg-white rounded-lg px-3 py-2 flex items-center justify-center"
               >
-                {name}
+                <Image
+                  src={`/logos/${file}`}
+                  alt={name}
+                  width={140}
+                  height={48}
+                  className="h-12 w-auto object-contain"
+                />
               </motion.div>
             ))}
           </div>
