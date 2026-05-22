@@ -20,101 +20,101 @@ export interface CaseStudy {
 
 export const caseStudies: CaseStudy[] = [
   {
-    id: "case-1",
-    slug: "mobilizacao-texas",
-    title: "Mobilização de 12 Técnicos para o Texas em 3 Semanas",
-    tag: "Mobilização EUA",
-    route: "Brasil → Texas, EUA",
+    id: "case-4",
+    slug: "mobilizacao-tailandia-pandemia",
+    title: "33 Técnicos Mobilizados para a Tailândia Durante a Pandemia de Covid-19",
+    tag: "Alta Complexidade",
+    route: "Brasil → Tailândia",
     challenge:
-      "Empresa de manutenção eólica precisava mobilizar 12 técnicos para um contrato de 6 meses no Texas com prazo de 3 semanas.",
+      "Em 2020, uma empresa eólica precisava mobilizar com urgência 33 técnicos brasileiros para projetos de blade repair, inspeção e manutenção na Tailândia — no auge das restrições da Covid-19.",
     outcome:
-      "Estruturamos a estratégia migratória, emitimos todos os vistos e coordenamos a logística completa. Equipe embarcou no prazo, sem nenhuma negativa consular.",
-    stat: "12",
-    statLabel: "Técnicos mobilizados",
-    date: "2024",
-    readTime: "3 min",
-    fullContent: [
-      {
-        heading: "O contexto",
-        body: "[Descreva aqui o contexto completo do cliente, o setor em que atua e o momento em que nos procurou.]",
-      },
-      {
-        heading: "O desafio",
-        body: "[Detalhe os desafios específicos enfrentados: prazos, documentação, perfil dos técnicos, requisitos do visto, restrições do contrato, etc.]",
-      },
-      {
-        heading: "Nossa abordagem",
-        body: "[Explique passo a passo como a Vow Vistos estruturou a solução: análise migratória, preparação documental, coordenação consular, logística de viagem, etc.]",
-      },
-      {
-        heading: "O resultado",
-        body: "[Descreva o desfecho em detalhes: quantos técnicos, em quanto tempo, qual foi o impacto para a operação do cliente e o que foi evitado.]",
-      },
-    ],
-  },
-  {
-    id: "case-2",
-    slug: "gestao-de-crise-fronteira",
-    title: "Resolução de Crise em 48 Horas na Fronteira",
-    tag: "Gestão de Crise",
-    route: "Brasil → Europa",
-    challenge:
-      "Dois técnicos foram barrados na fronteira por inconsistência documental. A empresa enfrentava perda de contrato com multa contratual.",
-    outcome:
-      "Acionamos nosso suporte emergencial, resolvemos a situação em 48 horas e remobilizamos a equipe sem perda do contrato.",
-    stat: "48h",
-    statLabel: "Para resolver a crise",
-    date: "2024",
-    readTime: "3 min",
-    fullContent: [
-      {
-        heading: "O contexto",
-        body: "[Descreva aqui o contexto do cliente e a operação em andamento quando a crise aconteceu.]",
-      },
-      {
-        heading: "O desafio",
-        body: "[Detalhe o que aconteceu na fronteira, quais documentos estavam inconsistentes, quais eram as consequências contratuais e o nível de urgência da situação.]",
-      },
-      {
-        heading: "Nossa abordagem",
-        body: "[Explique como o suporte emergencial foi acionado, quais medidas foram tomadas nas primeiras horas, como a comunicação foi gerenciada e quais canais foram utilizados para resolver a situação.]",
-      },
-      {
-        heading: "O resultado",
-        body: "[Descreva como a situação foi resolvida, em quanto tempo, qual foi o impacto evitado e o que o cliente conseguiu preservar operacionalmente.]",
-      },
-    ],
-  },
-  {
-    id: "case-3",
-    slug: "expansao-internacional-multiplos-destinos",
-    title: "Protocolo de Mobilização para Expansão Internacional",
-    tag: "Expansão Internacional",
-    route: "Brasil → Múltiplos países",
-    challenge:
-      "Empresa eólica em processo de expansão internacional precisava de uma estrutura de mobilização recorrente para equipes em diferentes destinos.",
-    outcome:
-      "Implementamos um protocolo de mobilização padronizado que reduziu o tempo médio de processamento e eliminou inconsistências documentais.",
-    stat: "40%",
-    statLabel: "Redução no tempo de mobilização",
-    date: "2024",
+      "33 técnicos mobilizados, 100% de entrada legal e zero negativas consulares. O cliente cumpriu o contrato no prazo e abriu operações em outros quatro países.",
+    stat: "33",
+    statLabel: "Técnicos mobilizados com zero negativas",
+    date: "2020",
     readTime: "4 min",
     fullContent: [
       {
         heading: "O contexto",
-        body: "[Descreva o momento de expansão da empresa, os mercados que estavam sendo explorados e os desafios de escalar operações internacionais sem um processo estruturado.]",
+        body: "Em 2020, no auge da pandemia de Covid-19, uma empresa do setor eólico precisava mobilizar com urgência uma equipe de técnicos brasileiros para atuar na Tailândia em contratos de blade repair, inspeção, rope access e manutenção corretiva. As fronteiras do mundo inteiro estavam parcial ou totalmente fechadas, e as exigências para entrada em países asiáticos eram das mais rigorosas registradas na história recente.",
       },
       {
         heading: "O desafio",
-        body: "[Detalhe os problemas que surgiam com o modelo anterior: inconsistências documentais, prazos imprevisíveis, falta de padronização entre destinos e o custo operacional disso.]",
+        body: "O desafio ia muito além da emissão de vistos. A operação exigiu a coordenação simultânea de exigências consulares, sanitárias, trabalhistas e logísticas que simplesmente não existiam em condições normais: vistos Non-Immigrant B, permissões de trabalho, autorizações de viagem, testes de PCR dentro de janelas específicas, seguro com cobertura Covid obrigatória, quarentena em hotel designado pelo governo tailandês e rotas aéreas operacionais em meio a severas restrições internacionais — tudo isso com prazo contratual em aberto.",
       },
       {
         heading: "Nossa abordagem",
-        body: "[Explique como a Vow Vistos mapeou os destinos, criou um protocolo padrão de mobilização, definiu fluxos documentais por país e estabeleceu um processo de checagem recorrente.]",
+        body: "A Vow conduziu o processo de ponta a ponta. Representamos o grupo perante a Embaixada da Tailândia no Brasil, coordenamos documentos com a empresa patrocinadora local, advogados no destino e demais autoridades envolvidas. Organizamos a logística aérea com rotas viáveis, os hotéis de quarentena homologados pelo governo tailandês e a preparação pré-embarque individual de cada técnico. No dia do voo, estivemos presencialmente no aeroporto de Guarulhos para o check-in internacional, garantindo que todos embarcassem com documentação completa e em conformidade.",
       },
       {
         heading: "O resultado",
-        body: "[Descreva os resultados mensuráveis: redução de tempo, eliminação de erros, impacto no planejamento operacional do cliente e como o processo continua funcionando hoje.]",
+        body: "Mesmo diante de mudanças constantes nas regras sanitárias e da operação limitada dos órgãos governamentais, a mobilização foi concluída com sucesso: 33 técnicos autorizados, 100% de entrada legal no território tailandês e zero negativas consulares. O cliente cumpriu seu contrato dentro do prazo. O protocolo operacional desenvolvido para essa mobilização foi posteriormente replicado para projetos em El Salvador, Nicarágua, Costa Rica e República Dominicana.",
+      },
+    ],
+  },
+  {
+    id: "case-6",
+    slug: "mobilizacao-argentina-lockdown",
+    title: "Dois Voos Privados, 70 Técnicos e 100% de Entrada Autorizada Durante o Lockdown Argentino",
+    tag: "Operação Excepcional",
+    route: "Brasil → Argentina",
+    challenge:
+      "Em 2020, durante o lockdown total na Argentina — fronteiras terrestres seladas, voos comerciais suspensos — uma empresa eólica brasileira precisava mobilizar 70 técnicos para projetos em andamento no país.",
+    outcome:
+      "Dois voos privados autorizados, 70 técnicos com entrada regular, zero negativas migratórias e DNI emitido para todos. A operação cresceu para 150 técnicos em campo, com suporte contínuo da Vow por três anos.",
+    stat: "70",
+    statLabel: "Técnicos mobilizados durante o lockdown",
+    date: "2020",
+    readTime: "5 min",
+    fullContent: [
+      {
+        heading: "O contexto",
+        body: "Em 2020, no auge da pandemia de Covid-19, uma empresa brasileira do setor eólico em processo de internacionalização precisava mobilizar 70 técnicos para atuação em múltiplos projetos na Argentina. O cenário era de lockdown total: fronteiras terrestres seladas, voos comerciais suspensos e rígidos controles sanitários vigentes em todo o território argentino.",
+      },
+      {
+        heading: "O desafio",
+        body: "A entrada exigia autorização governamental em caráter de exceção — o que significava demonstrar formalmente que os serviços prestados se enquadravam como essenciais à infraestrutura de geração de energia. Sem voos comerciais disponíveis, qualquer mobilização dependia da operação de aeronaves privadas fretadas. Após a chegada, cada técnico enfrentaria quarentena obrigatória de 14 dias, testagem de PCR em três momentos e necessidade de regularização migratória completa, incluindo a obtenção do DNI para residência e trabalho no país.",
+      },
+      {
+        heading: "Nossa abordagem",
+        body: "A Vow estruturou a operação do zero. Coordenamos junto às autoridades argentinas a obtenção de autorização de entrada em caráter excepcional, preparando a documentação que comprovou a essencialidade dos serviços. Localizamos fornecedores habilitados a operar dois voos privados dedicados ao grupo e coordenamos o deslocamento dos técnicos de diversas cidades do Brasil até Porto Alegre, incluindo hospedagem pré-embarque, listas de passageiros, faturamento, autorizações sanitárias e acompanhamento presencial no embarque. Após a chegada em Buenos Aires, acompanhamos todos os técnicos ao longo da quarentena de 14 dias e dos testes PCR exigidos — antes do embarque, na chegada e ao final do isolamento. Conduzimos também a regularização migratória completa: documentação provisória e emissão de DNI. Paralelamente, assumimos a gestão de uma frota de 15 veículos 4x4 para operação em regiões remotas da Argentina, incluindo seleção de fornecedores locais, contratos, pagamentos, auditoria, manutenção, suporte a sinistros e substituição de veículos quando necessário.",
+      },
+      {
+        heading: "O resultado",
+        body: "70 técnicos mobilizados, dois voos privados autorizados, 100% de entrada regular no país, zero negativas migratórias e DNI emitido para todos os profissionais. A operação inicial abriu caminho para a expansão do cliente na Argentina, que chegou a aproximadamente 150 técnicos em campo. A Vow prestou suporte contínuo por três anos: mobilizações, desmobilizações, gestão de frota, deslocamentos internos e atendimento a emergências.",
+      },
+    ],
+  },
+  {
+    id: "case-5",
+    slug: "visto-b1-eua-98-aprovacoes",
+    title: "49 Aprovações em 50 Solicitações de Visto B1 para Projetos Eólicos nos EUA",
+    tag: "Visto B1 EUA",
+    route: "Brasil → Estados Unidos",
+    challenge:
+      "Em 2022, uma empresa eólica precisava mobilizar 50 técnicos para projetos nos EUA dentro de uma janela operacional crítica, estruturando uma estratégia B1 em escala no período pós-pandemia, com agendas consulares ainda muito limitadas.",
+    outcome:
+      "49 vistos aprovados em 50 solicitações, 98% de taxa de aprovação, três consulados envolvidos. O cliente cumpriu o cronograma e manteve sua operação no mercado eólico norte-americano.",
+    stat: "98%",
+    statLabel: "Taxa de aprovação consular",
+    date: "2022",
+    readTime: "4 min",
+    fullContent: [
+      {
+        heading: "O contexto",
+        body: "Em 2022, uma empresa brasileira do setor eólico precisava mobilizar com urgência 50 técnicos para atuação temporária em projetos nos Estados Unidos, vinculados a um dos maiores fabricantes globais do setor. A operação exigia uma estratégia B1 estruturada em larga escala, em um cenário pós-pandemia em que a disponibilidade de agenda nos consulados americanos ainda era extremamente limitada.",
+      },
+      {
+        heading: "O desafio",
+        body: "Além do volume, dois fatores tornavam essa operação particularmente crítica. O primeiro era o enquadramento da categoria: o visto B1 exige que as atividades sejam caracterizadas como consultivas, técnicas ou de capacitação — qualquer imprecisão na construção do dossiê cria fundamento para negativa. O segundo era o prazo: a mobilização tinha uma janela operacional rígida, determinada por fatores climáticos e pelo cronograma dos projetos. Perder essa janela significava perder o contrato.",
+      },
+      {
+        heading: "Nossa abordagem",
+        body: "A Vow construiu uma estratégia imigratória 100% alinhada às exigências da categoria B1. Cada um dos 50 técnicos foi analisado individualmente: preparação documental personalizada, comprovação de vínculos com o Brasil, cartas de suporte das empresas envolvidas, orientação consular e simulação de entrevista. Para contornar a escassez de agendas, nossa equipe coordenou solicitações emergenciais e distribuiu as entrevistas entre os consulados de Recife, São Paulo e Brasília, organizando toda a logística nacional — voos, traslados, hospedagens e suporte fora do horário comercial.",
+      },
+      {
+        heading: "O resultado",
+        body: "49 vistos aprovados em 50 solicitações — 98% de taxa de aprovação. Três consulados, operação concluída dentro da janela do cliente. Após a emissão, a Vow também coordenou a mobilização internacional: orientação pré-embarque, suporte on-travel e acompanhamento até a chegada aos destinos nos Estados Unidos. Com a equipe mobilizada no prazo, o cliente executou os projetos conforme o cronograma e manteve sua posição no mercado eólico norte-americano.",
       },
     ],
   },

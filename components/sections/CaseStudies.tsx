@@ -41,7 +41,7 @@ export default function CaseStudies() {
         </div>
 
         {/* Case study cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {caseStudies.map((study, i) => (
             <motion.div
               key={study.id}
