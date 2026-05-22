@@ -3,12 +3,14 @@ export interface ServiceItem {
   title: string;
   description: string;
   items: string[];
+  icon: string;
   highlight?: boolean;
 }
 
 export const services: ServiceItem[] = [
   {
     id: "immigration",
+    icon: "/icon-globe.svg",
     title: "Imigração Corporativa",
     description:
       "Estruturamos processos migratórios para empresas do setor eólico com foco em agilidade, conformidade e mitigação de riscos. Com especialização no mercado americano, aceleramos vistos e reduzimos interrupções operacionais.",
@@ -23,6 +25,7 @@ export const services: ServiceItem[] = [
   },
   {
     id: "travel",
+    icon: "/icon-travel.svg",
     title: "Crew Travel Management",
     description:
       "Gerenciamos toda a logística internacional da sua equipe técnica, do embarque ao retorno.",
@@ -37,6 +40,7 @@ export const services: ServiceItem[] = [
   },
   {
     id: "operational",
+    icon: "/icon-immigration.svg",
     title: "Atendimento Direto 24/7",
     description:
       "Nossa equipe atua como uma extensão do seu departamento de mobilização internacional, com atendimento humano, não automatizado.",

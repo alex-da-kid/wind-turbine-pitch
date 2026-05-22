@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { services } from "@/lib/data/services";
 
@@ -40,6 +41,13 @@ export default function Solutions() {
               transition={{ duration: 0.5, delay: i * 0.1 }}
               className="relative rounded-xl p-8 border bg-gray-50 border-gray-200 hover:border-blue-300 hover:shadow-sm transition-all group"
             >
+              <Image
+                src={service.icon}
+                alt=""
+                width={52}
+                height={52}
+                className="mb-6"
+              />
               <h3 className="text-xl font-medium mb-3 text-vow-text">
                 {service.title}
               </h3>
