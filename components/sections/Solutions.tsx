@@ -5,7 +5,7 @@ import { services } from "@/lib/data/services";
 
 export default function Solutions() {
   return (
-    <section id="servicos" className="bg-vow-dark py-24 lg:py-32">
+    <section id="servicos" className="bg-white py-24 lg:py-32">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         {/* Section header */}
         <div className="max-w-2xl mb-16">
@@ -22,10 +22,10 @@ export default function Solutions() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="text-3xl md:text-4xl lg:text-5xl font-bold text-vow-text leading-tight"
+            className="text-3xl md:text-4xl lg:text-5xl font-light text-vow-primary leading-tight"
           >
             Uma estrutura completa para{" "}
-            <span className="text-vow-primary">mobilização internacional.</span>
+            <span className="text-vow-text">mobilização internacional.</span>
           </motion.h2>
         </div>
 
@@ -38,9 +38,9 @@ export default function Solutions() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-60px" }}
               transition={{ duration: 0.5, delay: i * 0.1 }}
-              className="relative rounded-xl p-8 border bg-vow-surface border-vow-border hover:border-vow-primary/40 transition-all group"
+              className="relative rounded-xl p-8 border bg-gray-50 border-gray-200 hover:border-blue-300 hover:shadow-sm transition-all group"
             >
-              <h3 className="text-xl font-bold mb-3 text-vow-text">
+              <h3 className="text-xl font-medium mb-3 text-vow-text">
                 {service.title}
               </h3>
               <p className="text-vow-muted text-sm leading-relaxed mb-6">

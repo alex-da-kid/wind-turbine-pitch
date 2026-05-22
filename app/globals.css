@@ -1,19 +1,39 @@
 @import "tailwindcss";
 
 @theme {
-  --color-vow-dark: #080D14;
-  --color-vow-surface: #0F1C2E;
-  --color-vow-surface-alt: #0D1825;
-  --color-vow-primary: #1D6FA4;
-  --color-vow-primary-hover: #2480B8;
-  --color-vow-border: #1A2B3F;
-  --color-vow-graphite: #2A3441;
-  --color-vow-text: #F0F4F8;
-  --color-vow-muted: #7A8FA6;
-  --color-vow-danger: #E05252;
+  /* ── Vestas-matched palette ──────────────────────────────────── */
 
-  --font-sans: var(--font-inter);
-  --font-display: var(--font-inter);
+  /* Dark backgrounds: hero, footer, final CTA */
+  --color-vow-dark: #1f3144;
+
+  /* Light section backgrounds */
+  --color-vow-surface: #ffffff;        /* white — cards and bright sections  */
+  --color-vow-surface-alt: #f7f7f7;    /* off-white — alternating sections   */
+
+  /* Teal accent section (Vestas's signature feature band) */
+  --color-vow-teal: #19736e;
+  --color-vow-teal-hover: #15625e;
+
+  /* Primary blue — CTAs, headings, links */
+  --color-vow-primary: #005aff;
+  --color-vow-primary-hover: #0051e8;
+
+  /* Orange — secondary accent */
+  --color-vow-orange: #e17d28;
+
+  /* Text on light backgrounds */
+  --color-vow-text: #1f3144;           /* dark navy — headings & strong text */
+  --color-vow-muted: #606d7b;          /* medium gray — body / secondary     */
+
+  /* Borders */
+  --color-vow-border: #dee2e6;         /* light border — on white/off-white  */
+  --color-vow-border-dark: #2d3f52;    /* dark border — on dark sections     */
+
+  /* Danger */
+  --color-vow-danger: #772219;
+
+  --font-sans: var(--font-dm-sans);
+  --font-display: var(--font-dm-sans);
 }
 
 * {
@@ -25,6 +45,6 @@ html {
 }
 
 body {
-  background-color: #080D14;
-  color: #F0F4F8;
+  background-color: #ffffff;
+  color: #1f3144;
 }

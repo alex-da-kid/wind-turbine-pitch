@@ -21,7 +21,7 @@ const logos = [
 
 export default function Authority() {
   return (
-    <section className="bg-vow-dark py-24 lg:py-32 border-t border-vow-border">
+    <section className="bg-gray-50 py-24 lg:py-32 border-t border-gray-200">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         {/* Section header */}
         <div className="text-center max-w-xl mx-auto mb-14">
@@ -38,10 +38,10 @@ export default function Authority() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="text-3xl md:text-4xl lg:text-5xl font-bold text-vow-text leading-tight"
+            className="text-3xl md:text-4xl lg:text-5xl font-light text-vow-primary leading-tight"
           >
             Empresas que{" "}
-            <span className="text-vow-primary">confiam na Vow.</span>
+            <span className="text-vow-text">confiam na Vow.</span>
           </motion.h2>
         </div>
 
@@ -52,7 +52,7 @@ export default function Authority() {
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          <div className="flex flex-wrap items-center justify-center gap-8">
+          <div className="flex flex-wrap items-center justify-center gap-6">
             {logos.map(({ file, name }, i) => (
               <motion.div
                 key={file}
@@ -60,14 +60,14 @@ export default function Authority() {
                 whileInView={{ opacity: 1 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.06 }}
-                className="bg-white rounded-lg px-3 py-2 flex items-center justify-center"
+                className="bg-white border border-gray-200 rounded-lg px-4 py-3 flex items-center justify-center hover:shadow-sm transition-shadow"
               >
                 <Image
                   src={`/logos/${file}`}
                   alt={name}
                   width={140}
                   height={48}
-                  className="h-12 w-auto object-contain"
+                  className="h-10 w-auto object-contain"
                 />
               </motion.div>
             ))}

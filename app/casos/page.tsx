@@ -14,7 +14,7 @@ export default function CasosPage() {
   return (
     <>
       <Header />
-      <main className="bg-vow-dark min-h-screen">
+      <main className="bg-white min-h-screen">
         {/* Page header */}
         <div className="max-w-7xl mx-auto px-6 lg:px-8 pt-36 pb-16">
           <Link
@@ -30,9 +30,9 @@ export default function CasosPage() {
           <span className="text-vow-primary text-xs font-semibold tracking-widest uppercase mb-4 block">
             Cases
           </span>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-vow-text leading-tight mb-6">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-light text-vow-primary leading-tight mb-6">
             Operações que{" "}
-            <span className="text-vow-primary">executamos.</span>
+            <span className="text-vow-text">executamos.</span>
           </h1>
           <p className="text-vow-muted text-lg max-w-xl leading-relaxed">
             Resultados reais em operações reais do setor eólico.
@@ -51,7 +51,7 @@ export default function CasosPage() {
               <Link
                 key={study.id}
                 href={`/casos/${study.slug}`}
-                className="group bg-vow-surface border border-vow-border rounded-xl p-7 flex flex-col hover:border-vow-primary/40 transition-colors"
+                className="group bg-white border border-gray-200 rounded-xl p-7 flex flex-col hover:border-blue-300 transition-colors"
               >
                 {/* Tag + route */}
                 <div className="flex items-center justify-between mb-6">

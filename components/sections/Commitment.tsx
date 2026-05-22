@@ -19,10 +19,8 @@ const principles = [
 
 export default function Commitment() {
   return (
-    <section className="bg-vow-surface-alt py-24 lg:py-32 relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-br from-vow-primary/5 via-transparent to-transparent" />
-
-      <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
+    <section className="bg-white py-24 lg:py-32">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <motion.span
@@ -38,10 +36,10 @@ export default function Commitment() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="text-3xl md:text-4xl lg:text-5xl font-bold text-vow-text leading-tight mb-6"
+            className="text-3xl md:text-4xl lg:text-5xl font-light text-vow-primary leading-tight mb-6"
           >
             Se você não opera,{" "}
-            <span className="text-vow-primary">nós não crescemos.</span>
+            <span className="text-vow-text">nós não crescemos.</span>
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -63,10 +61,10 @@ export default function Commitment() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-60px" }}
               transition={{ duration: 0.5, delay: i * 0.1 }}
-              className="bg-vow-surface border border-vow-border rounded-xl p-8 hover:border-vow-primary/40 transition-colors"
+              className="bg-gray-50 border border-gray-200 rounded-xl p-8 hover:border-blue-300 hover:shadow-sm transition-all"
             >
               <div className="w-8 h-0.5 bg-vow-primary mb-6" />
-              <h3 className="text-vow-text font-bold text-lg mb-3 leading-snug">
+              <h3 className="text-vow-text font-medium text-lg mb-3 leading-snug">
                 {p.title}
               </h3>
               <p className="text-vow-muted text-sm leading-relaxed">{p.body}</p>

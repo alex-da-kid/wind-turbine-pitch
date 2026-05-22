@@ -1,21 +1,24 @@
+import Image from "next/image";
+
 export default function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="border-t border-vow-border bg-vow-dark">
+    <footer style={{ backgroundColor: "#1f3144" }}>
       <div className="max-w-7xl mx-auto px-6 lg:px-8 py-14">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           {/* Brand */}
           <div>
-            <div className="flex flex-col leading-none mb-4">
-              <span className="text-vow-text font-bold text-xl tracking-tight">
-                VOW
-              </span>
-              <span className="text-vow-primary text-xs font-semibold tracking-widest uppercase">
-                VISTOS
-              </span>
+            <div className="mb-5">
+              <Image
+                src="/Vow-Vistos-Logo.svg"
+                alt="Vow Vistos"
+                width={120}
+                height={45}
+                className="brightness-0 invert"
+              />
             </div>
-            <p className="text-vow-muted text-sm leading-relaxed max-w-xs">
+            <p className="text-white/60 text-sm leading-relaxed max-w-xs">
               Mobilização internacional para operações do setor eólico.
               Imigração, logística e suporte operacional.
             </p>
@@ -23,7 +26,7 @@ export default function Footer() {
 
           {/* Links */}
           <div>
-            <h4 className="text-vow-text font-semibold text-sm mb-4">
+            <h4 className="text-white font-medium text-sm mb-4">
               Serviços
             </h4>
             <ul className="space-y-3">
@@ -36,7 +39,7 @@ export default function Footer() {
                 <li key={item}>
                   <a
                     href="#servicos"
-                    className="text-vow-muted hover:text-vow-text transition-colors text-sm"
+                    className="text-white/60 hover:text-white transition-colors text-sm"
                   >
                     {item}
                   </a>
@@ -47,22 +50,22 @@ export default function Footer() {
 
           {/* Contact */}
           <div id="contato">
-            <h4 className="text-vow-text font-semibold text-sm mb-4">
+            <h4 className="text-white font-medium text-sm mb-4">
               Contato
             </h4>
             <div className="space-y-3">
-              <p className="text-vow-muted text-sm">
+              <p className="text-white/60 text-sm">
                 Atendimento especializado para operações internacionais.
               </p>
               <a
                 href="mailto:contato@vowvistos.com"
-                className="block text-vow-primary hover:text-vow-primary-hover transition-colors text-sm font-medium"
+                className="block text-white hover:text-white/80 transition-colors text-sm font-medium"
               >
                 contato@vowvistos.com
               </a>
               <a
                 href="#contato"
-                className="inline-block bg-vow-primary hover:bg-vow-primary-hover text-white text-sm font-semibold px-5 py-2.5 rounded-lg transition-colors mt-2"
+                className="inline-block bg-white text-vow-primary hover:bg-gray-100 text-sm font-medium px-5 py-2.5 rounded-lg transition-colors mt-2"
               >
                 Agendar Reunião
               </a>
@@ -70,11 +73,11 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-vow-border mt-10 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-vow-muted text-xs">
+        <div className="border-t border-white/10 mt-10 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
+          <p className="text-white/40 text-xs">
             © {year} Vow Vistos. Todos os direitos reservados.
           </p>
-          <p className="text-vow-muted text-xs">
+          <p className="text-white/40 text-xs">
             Mobilização internacional para o setor eólico.
           </p>
         </div>

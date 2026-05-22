@@ -35,7 +35,7 @@ export default async function CaseStudyPage({
   return (
     <>
       <Header />
-      <main className="bg-vow-dark min-h-screen">
+      <main className="bg-white min-h-screen">
         {/* Page header */}
         <div className="max-w-3xl mx-auto px-6 lg:px-8 pt-36 pb-12">
           {/* Breadcrumb */}
@@ -62,13 +62,13 @@ export default async function CaseStudyPage({
           </div>
 
           {/* Title */}
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-vow-text leading-tight">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl font-light text-vow-primary leading-tight">
             {study.title}
           </h1>
         </div>
 
         {/* Stat banner */}
-        <div className="border-y border-vow-border">
+        <div className="border-y border-gray-200">
           <div className="max-w-3xl mx-auto px-6 lg:px-8 py-10">
             <div className="text-6xl font-bold text-vow-primary mb-2">
               {study.stat}
@@ -83,7 +83,7 @@ export default async function CaseStudyPage({
         <div className="max-w-3xl mx-auto px-6 lg:px-8 py-16 space-y-12">
           {/* Challenge + Outcome summary */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="bg-vow-surface border border-vow-border rounded-xl p-6">
+            <div className="bg-gray-50 border border-gray-200 rounded-xl p-6">
               <p className="text-vow-muted text-xs font-semibold uppercase tracking-widest mb-3">
                 Desafio
               </p>
@@ -91,7 +91,7 @@ export default async function CaseStudyPage({
                 {study.challenge}
               </p>
             </div>
-            <div className="bg-vow-surface border border-vow-primary/30 rounded-xl p-6">
+            <div className="bg-gray-50 border border-blue-200 rounded-xl p-6">
               <p className="text-vow-primary text-xs font-semibold uppercase tracking-widest mb-3">
                 Resultado
               </p>
@@ -106,7 +106,7 @@ export default async function CaseStudyPage({
             {study.fullContent.map((section, i) => (
               <div key={i}>
                 {section.heading && (
-                  <h2 className="text-xl font-bold text-vow-text mb-4">
+                  <h2 className="text-xl font-medium text-vow-text mb-4">
                     {section.heading}
                   </h2>
                 )}
@@ -118,7 +118,7 @@ export default async function CaseStudyPage({
           </div>
 
           {/* Bottom nav */}
-          <div className="border-t border-vow-border pt-10 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+          <div className="border-t border-gray-200 pt-10 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
             <Link
               href="/casos"
               className="inline-flex items-center gap-2 text-vow-muted hover:text-vow-text text-sm transition-colors"

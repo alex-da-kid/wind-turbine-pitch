@@ -5,7 +5,7 @@ import { testimonials } from "@/lib/data/testimonials";
 
 export default function Testimonials() {
   return (
-    <section className="bg-vow-surface-alt py-24 lg:py-32">
+    <section className="bg-white py-24 lg:py-32">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         {/* Section header */}
         <div className="text-center max-w-2xl mx-auto mb-14">
@@ -22,10 +22,10 @@ export default function Testimonials() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="text-3xl md:text-4xl lg:text-5xl font-bold text-vow-text leading-tight"
+            className="text-3xl md:text-4xl lg:text-5xl font-light text-vow-primary leading-tight"
           >
             O que nossos{" "}
-            <span className="text-vow-primary">clientes dizem.</span>
+            <span className="text-vow-text">clientes dizem.</span>
           </motion.h2>
         </div>
 
@@ -38,10 +38,10 @@ export default function Testimonials() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-60px" }}
               transition={{ duration: 0.5, delay: i * 0.1 }}
-              className="bg-vow-surface border border-vow-border rounded-xl p-7 flex flex-col"
+              className="bg-gray-50 border border-gray-200 rounded-xl p-7 flex flex-col hover:shadow-sm transition-shadow"
             >
               {/* Quote mark */}
-              <div className="text-vow-primary/30 text-5xl font-serif leading-none mb-4">
+              <div className="text-vow-primary/40 text-5xl font-serif leading-none mb-4">
                 "
               </div>
 
@@ -50,14 +50,14 @@ export default function Testimonials() {
               </blockquote>
 
               {/* Author */}
-              <div className="flex items-center gap-3 pt-4 border-t border-vow-border">
-                <div className="w-9 h-9 rounded-full bg-vow-primary/20 flex items-center justify-center flex-shrink-0">
+              <div className="flex items-center gap-3 pt-4 border-t border-gray-200">
+                <div className="w-9 h-9 rounded-full bg-vow-primary/10 flex items-center justify-center flex-shrink-0">
                   <span className="text-vow-primary text-sm font-bold">
                     {t.name.charAt(0)}
                   </span>
                 </div>
                 <div>
-                  <div className="text-vow-text text-sm font-semibold">
+                  <div className="text-vow-text text-sm font-medium">
                     {t.name}
                   </div>
                   <div className="text-vow-muted text-xs">
@@ -69,7 +69,6 @@ export default function Testimonials() {
           ))}
         </div>
 
-        {/* Placeholder notice */}
         <motion.p
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
