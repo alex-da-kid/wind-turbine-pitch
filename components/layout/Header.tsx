@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Image from "next/image";
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
@@ -23,22 +24,22 @@ export default function Header() {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
-          ? "bg-vow-dark/95 backdrop-blur-sm border-b border-vow-border"
+          ? "bg-white/95 backdrop-blur-sm border-b border-vow-border shadow-sm"
           : "bg-transparent"
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex items-center justify-between h-18 py-4">
           {/* Logo */}
-          <a href="#" className="flex items-center gap-2">
-            <div className="flex flex-col leading-none">
-              <span className="text-vow-text font-bold text-xl tracking-tight">
-                VOW
-              </span>
-              <span className="text-vow-primary text-xs font-semibold tracking-widest uppercase">
-                VISTOS
-              </span>
-            </div>
+          <a href="#" className="flex items-center">
+            <Image
+              src="/Vow-Vistos-Logo.svg"
+              alt="Vow Vistos"
+              width={130}
+              height={49}
+              priority
+              className={`transition-all duration-300 ${!scrolled ? "brightness-0 invert" : ""}`}
+            />
           </a>
 
           {/* Desktop Nav */}
@@ -47,7 +48,11 @@ export default function Header() {
               <a
                 key={link.href}
                 href={link.href}
-                className="text-vow-muted hover:text-vow-text transition-colors text-sm font-medium"
+                className={`transition-colors text-sm font-normal ${
+                  scrolled
+                    ? "text-vow-muted hover:text-vow-text"
+                    : "text-white/80 hover:text-white"
+                }`}
               >
                 {link.label}
               </a>
@@ -58,13 +63,17 @@ export default function Header() {
           <div className="hidden md:flex items-center gap-3">
             <a
               href="#contato"
-              className="text-vow-muted hover:text-vow-text transition-colors text-sm font-medium"
+              className={`transition-colors text-sm font-normal ${
+                scrolled
+                  ? "text-vow-muted hover:text-vow-text"
+                  : "text-white/80 hover:text-white"
+              }`}
             >
               Falar com especialista
             </a>
             <a
               href="#contato"
-              className="bg-vow-primary hover:bg-vow-primary-hover text-white text-sm font-semibold px-5 py-2.5 rounded-lg transition-colors"
+              className="bg-vow-primary hover:bg-vow-primary-hover text-white text-sm font-medium px-5 py-2.5 rounded-lg transition-colors"
             >
               Agendar Reunião
             </a>
@@ -73,7 +82,7 @@ export default function Header() {
           {/* Mobile menu button */}
           <button
             onClick={() => setMenuOpen(!menuOpen)}
-            className="md:hidden text-vow-muted hover:text-vow-text transition-colors p-2"
+            className={`md:hidden transition-colors p-2 ${scrolled ? "text-vow-muted hover:text-vow-text" : "text-white"}`}
             aria-label="Menu"
           >
             <div className="space-y-1.5">
@@ -92,14 +101,14 @@ export default function Header() {
 
         {/* Mobile menu */}
         {menuOpen && (
-          <div className="md:hidden border-t border-vow-border pb-6 pt-4">
+          <div className="md:hidden border-t border-vow-border bg-white pb-6 pt-4">
             <nav className="flex flex-col gap-4">
               {navLinks.map((link) => (
                 <a
                   key={link.href}
                   href={link.href}
                   onClick={() => setMenuOpen(false)}
-                  className="text-vow-muted hover:text-vow-text transition-colors text-sm font-medium py-1"
+                  className="text-vow-muted hover:text-vow-text transition-colors text-sm font-normal py-1"
                 >
                   {link.label}
                 </a>
@@ -107,7 +116,7 @@ export default function Header() {
               <a
                 href="#contato"
                 onClick={() => setMenuOpen(false)}
-                className="bg-vow-primary hover:bg-vow-primary-hover text-white text-sm font-semibold px-5 py-3 rounded-lg transition-colors text-center mt-2"
+                className="bg-vow-primary hover:bg-vow-primary-hover text-white text-sm font-medium px-5 py-3 rounded-lg transition-colors text-center mt-2"
               >
                 Agendar Reunião
               </a>

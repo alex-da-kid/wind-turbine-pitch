@@ -18,14 +18,14 @@ export default function Home() {
       <Header />
       <main>
         <Hero />
+        <Authority />
+        <CaseStudies />
         <PainPoints />
         <Solutions />
         <Differentiator />
         <HowItWorks />
         <Commitment />
-        <CaseStudies />
         <Testimonials />
-        <Authority />
         <Team />
         <FinalCTA />
       </main>

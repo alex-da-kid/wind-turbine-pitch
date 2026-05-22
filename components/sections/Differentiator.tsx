@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
 
 const trustPoints = [
@@ -11,14 +12,27 @@ const trustPoints = [
 
 export default function Differentiator() {
   return (
-    <section className="bg-vow-graphite/30 py-24 lg:py-32 relative overflow-hidden">
-      {/* Background accent */}
-      <div className="absolute right-0 top-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-vow-primary/5 rounded-full blur-[100px]" />
-
-      <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
+    <section className="bg-gray-50 py-24 lg:py-32">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
           {/* Text side */}
           <div>
+            {/* Image */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="relative w-full h-56 rounded-2xl overflow-hidden mb-10"
+            >
+              <Image
+                src="/image2.webp"
+                alt="Wind farm landscape"
+                fill
+                className="object-cover object-center"
+              />
+            </motion.div>
+
             <motion.span
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
@@ -32,10 +46,10 @@ export default function Differentiator() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
-              className="text-3xl md:text-4xl lg:text-5xl font-bold text-vow-text leading-tight mb-6"
+              className="text-3xl md:text-4xl lg:text-5xl font-light text-vow-primary leading-tight mb-6"
             >
               Operamos como{" "}
-              <span className="text-vow-primary">parte da sua equipe.</span>
+              <span className="text-vow-text">parte da sua equipe.</span>
             </motion.h2>
             <motion.p
               initial={{ opacity: 0, y: 20 }}
@@ -70,9 +84,9 @@ export default function Differentiator() {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true, margin: "-40px" }}
                 transition={{ duration: 0.5, delay: i * 0.12 }}
-                className="flex items-start gap-4 bg-vow-surface border border-vow-border rounded-xl p-5"
+                className="flex items-start gap-4 bg-white border border-gray-200 rounded-xl p-5 hover:shadow-sm transition-shadow"
               >
-                <div className="w-6 h-6 rounded-full bg-vow-primary/15 border border-vow-primary/30 flex items-center justify-center flex-shrink-0 mt-0.5">
+                <div className="w-6 h-6 rounded-full bg-vow-primary/10 border border-vow-primary/25 flex items-center justify-center flex-shrink-0 mt-0.5">
                   <svg
                     className="w-3 h-3 text-vow-primary"
                     fill="none"
