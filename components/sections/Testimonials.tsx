@@ -75,7 +75,7 @@ export default function Testimonials() {
           viewport={{ once: true }}
           className="text-center text-vow-muted/50 text-xs mt-8 italic"
         >
-          * Conteúdo placeholder — substitua pelos depoimentos reais antes do lançamento.
+          * Segundo e terceiro depoimentos são placeholder — substitua pelos reais antes do lançamento.
         </motion.p>
       </div>
     </section>

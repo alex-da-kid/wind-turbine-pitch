@@ -6,15 +6,15 @@ export interface Testimonial {
   company: string;
 }
 
-// Placeholder content — replace with real testimonials before launch
+// Placeholder slots: replace t2 and t3 with real testimonials before launch
 export const testimonials: Testimonial[] = [
   {
     id: "t1",
     quote:
-      "A Vow Vistos transformou nossa capacidade de mobilização internacional. Antes, cada operação era um stress enorme. Hoje é um processo estruturado e previsível.",
-    name: "Carlos M.",
-    role: "Diretor de Operações",
-    company: "Empresa de Manutenção Eólica [Substituir pelo nome real]",
+      "Para o ramo Eólico onde tudo se trata com urgência dificultando o planejamento antecipado na maioria das vezes, a Vow tem prontidão, solução rápida e eficaz para sempre atuar de maneira com que os custos sejam os mínimos possíveis com a qualidade esperada atendendo qualquer urgência sem atrasos. Não nos vemos hoje sem esta parceria, a Vow hoje é o braço direito da nossa empresa.",
+    name: "Yago Duarte",
+    role: "CEO",
+    company: "Wind Special Forces",
   },
   {
     id: "t2",
