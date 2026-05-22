@@ -13,6 +13,9 @@ export const metadata: Metadata = {
   title: "Vow Vistos — Mobilização Internacional para Operações Eólicas",
   description:
     "Imigração corporativa, logística global e suporte operacional para empresas do setor eólico. Especialistas em mobilização de equipes técnicas para o mercado americano.",
+  icons: {
+    icon: "/favicon-vow.jpg",
+  },
   keywords: [
     "mobilização internacional",
     "setor eólico",

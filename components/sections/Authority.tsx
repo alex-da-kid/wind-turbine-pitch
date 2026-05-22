@@ -40,8 +40,8 @@ export default function Authority() {
             transition={{ duration: 0.5 }}
             className="text-3xl md:text-4xl lg:text-5xl font-light text-vow-primary leading-tight"
           >
-            Empresas que{" "}
-            <span className="text-vow-text">confiam na Vow.</span>
+            Empresas do setor eólico{" "}
+            <span className="text-vow-text">que já mobilizamos.</span>
           </motion.h2>
         </div>
 

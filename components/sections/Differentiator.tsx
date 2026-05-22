@@ -26,8 +26,8 @@ export default function Differentiator() {
               className="relative w-full h-56 rounded-2xl overflow-hidden mb-10"
             >
               <Image
-                src="/image2.webp"
-                alt="Wind farm landscape"
+                src="/team-operations.jpg"
+                alt="Equipe de operações em reunião de alinhamento"
                 fill
                 className="object-cover object-center"
               />

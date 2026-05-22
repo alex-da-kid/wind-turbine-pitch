@@ -8,8 +8,8 @@ export default function Hero() {
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-white">
       {/* Background image */}
       <Image
-        src="/image1.jpg"
-        alt="Wind turbines in operation"
+        src="/hero-airport.jpg"
+        alt="Profissional em trânsito internacional no aeroporto"
         fill
         priority
         className="object-cover object-center"

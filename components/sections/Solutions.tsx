@@ -16,7 +16,7 @@ export default function Solutions() {
             viewport={{ once: true }}
             className="text-vow-primary text-xs font-semibold tracking-widest uppercase mb-4 block"
           >
-            Soluções
+            O que fazemos
           </motion.span>
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
