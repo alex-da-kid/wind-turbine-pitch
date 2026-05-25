@@ -1,7 +1,6 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { CLIENTS } from "@/lib/clients";
-import ClientBanner from "@/components/layout/ClientBanner";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import Hero from "@/components/sections/Hero";
@@ -44,7 +43,6 @@ export default async function ClientPage({ params }: Props) {
 
   return (
     <>
-      <ClientBanner companyName={client.companyName} />
       <Header />
       <main>
         <Hero
