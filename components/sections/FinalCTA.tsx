@@ -2,10 +2,15 @@
 
 import { motion } from "framer-motion";
 
-const WHATSAPP_URL =
+const DEFAULT_WHATSAPP_URL =
   "https://wa.me/558531216961?text=Olá%20Guilherme%2C%20vim%20pelo%20site%20da%20Vow%20Vistos%20e%20gostaria%20de%20conversar%20sobre%20mobilização%20internacional%20para%20o%20setor%20eólico.";
 
-export default function FinalCTA() {
+interface FinalCTAProps {
+  whatsappUrl?: string;
+}
+
+export default function FinalCTA({ whatsappUrl }: FinalCTAProps = {}) {
+  const WHATSAPP_URL = whatsappUrl ?? DEFAULT_WHATSAPP_URL;
   return (
     <section
       className="relative py-28 lg:py-36 overflow-hidden"

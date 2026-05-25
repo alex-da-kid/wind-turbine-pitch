@@ -1,9 +1,27 @@
 "use client";
 
+import { type ReactNode } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
-export default function Hero() {
+interface HeroProps {
+  tag?: string;
+  headline?: ReactNode;
+  subheadline?: string;
+}
+
+export default function Hero({ tag, headline, subheadline }: HeroProps) {
+  const defaultTag = "Especialistas no mercado americano";
+  const defaultHeadline = (
+    <>
+      Sua equipe pronta para{" "}
+      <span className="text-white/80">operar em qualquer lugar</span>{" "}
+      do mundo.
+    </>
+  );
+  const defaultSubheadline =
+    "A Vow Vistos apoia empresas do setor eólico com mobilização internacional, imigração corporativa, logística global e suporte operacional 24/7.";
+
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-white">
       {/* Background image */}
@@ -27,7 +45,7 @@ export default function Hero() {
         >
           <span className="w-1.5 h-1.5 rounded-full bg-white animate-pulse" />
           <span className="text-white text-xs font-medium tracking-wide uppercase">
-            Especialistas no mercado americano
+            {tag ?? defaultTag}
           </span>
         </motion.div>
 
@@ -38,9 +56,7 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.1 }}
           className="text-4xl md:text-6xl lg:text-7xl font-light text-white leading-[1.08] tracking-tight mb-6"
         >
-          Sua equipe pronta para{" "}
-          <span className="text-white/80">operar em qualquer lugar</span>{" "}
-          do mundo.
+          {headline ?? defaultHeadline}
         </motion.h1>
 
         {/* Subheadline */}
@@ -50,9 +66,7 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="text-lg md:text-xl text-white/70 max-w-2xl mx-auto leading-relaxed mb-10"
         >
-          A Vow Vistos apoia empresas do setor eólico com mobilização
-          internacional, imigração corporativa, logística global e suporte
-          operacional 24/7.
+          {subheadline ?? defaultSubheadline}
         </motion.p>
 
         {/* CTAs */}
