@@ -86,6 +86,39 @@ export const caseStudies: CaseStudy[] = [
     ],
   },
   {
+    id: "case-7",
+    slug: "mobilizacao-mexico-blade-repair",
+    title: "20 Técnicos em Campo no México em 4 Semanas, com 100% de Aprovação e Admissão",
+    tag: "Mobilização LATAM",
+    route: "Brasil → México",
+    challenge:
+      "Entre 2021 e 2024, uma empresa brasileira do setor eólico precisava mobilizar equipes de blade repair para múltiplos projetos em regiões remotas do México — Tamaulipas, Oaxaca, San Luis Potosí e Baja California — com urgência operacional e janelas de vento que não perdoavam atrasos.",
+    outcome:
+      "20 técnicos com vistos aprovados, 100% de aprovação consular, 100% de admissão no México e equipes prontas em campo em até 4 semanas. Suporte 24/7 contínuo ao longo de todos os projetos.",
+    stat: "100%",
+    statLabel: "Aprovação consular e admissão no México",
+    date: "2021–2024",
+    readTime: "5 min",
+    fullContent: [
+      {
+        heading: "O contexto",
+        body: "Entre 2021 e 2024, uma empresa brasileira do setor eólico em processo de expansão para o mercado LATAM precisava mobilizar equipes de blade repair para múltiplos projetos em regiões remotas do México, incluindo Tamaulipas, Oaxaca, San Luis Potosí e Baja California. O desafio combinava urgência operacional, estratégia consular e logística complexa. Em muitos casos, a velocidade de mobilização era decisiva: torres eólicas paradas precisavam voltar a gerar energia, e janelas de baixa incidência de ventos exigiam que as equipes estivessem em campo no momento certo para execução das manutenções programadas.",
+      },
+      {
+        heading: "O desafio",
+        body: "A operação exigia uma estratégia consular precisa para a categoria de visitante com atividades não remuneradas — os técnicos permaneciam empregados e remunerados pela empresa brasileira. Qualquer imprecisão no enquadramento poderia gerar negativas. Além da estratégia consular, a logística era altamente complexa: voos internacionais para Cidade do México ou Monterrey, conexões domésticas, transfers e deslocamentos terrestres que podiam variar de 5 a 12 horas até o destino final em regiões remotas.",
+      },
+      {
+        heading: "Nossa abordagem",
+        body: "A Vow estruturou dossiês individuais para cada técnico, com comprovação de vínculo com o Brasil, cartas de suporte das empresas no Brasil e no México, descrição técnica das atividades e solicitação formal de agendamentos emergenciais junto ao Consulado Mexicano em São Paulo. Nossa equipe conduziu orientações em pequenos grupos, preparando os técnicos tanto para a entrevista consular quanto para a admissão no México, garantindo consistência entre o propósito da viagem, a categoria do visto e a operação em campo. As equipes foram mobilizadas em etapas — geralmente grupos de três técnicos — com toda a logística coordenada de ponta a ponta, incluindo voos, conexões domésticas, transfers, trechos rodoviários e pernoites intermediários quando necessário.",
+      },
+      {
+        heading: "O resultado",
+        body: "20 técnicos com vistos aprovados, 100% de aprovação consular, 100% de admissão no México e equipes prontas em campo em até 4 semanas. Ao longo dos projetos, a Vow prestou suporte 24/7 para remarcações, emergências, acionamento de seguro, retornos antecipados, desmobilizações, rotação de equipes e extensão de FMM. A operação contribuiu para que o cliente atendesse contratos dentro do prazo, evitasse atrasos operacionais e consolidasse sua presença como um dos principais provedores de serviços de blade repair no México por vários anos.",
+      },
+    ],
+  },
+  {
     id: "case-5",
     slug: "visto-b1-eua-98-aprovacoes",
     title: "49 Aprovações em 50 Solicitações de Visto B1 para Projetos Eólicos nos EUA",
