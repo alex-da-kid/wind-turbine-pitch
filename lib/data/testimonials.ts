@@ -6,7 +6,6 @@ export interface Testimonial {
   company: string;
 }
 
-// Placeholder slots: replace t2 and t3 with real testimonials before launch
 export const testimonials: Testimonial[] = [
   {
     id: "t1",
@@ -15,21 +14,5 @@ export const testimonials: Testimonial[] = [
     name: "Yago Duarte",
     role: "CEO",
     company: "Wind Special Forces",
-  },
-  {
-    id: "t2",
-    quote:
-      "O que nos impressionou foi a velocidade e o suporte humano. Quando tivemos uma emergência com nossa equipe nos EUA, eles resolveram em horas, não em dias.",
-    name: "Ana L.",
-    role: "Gerente de Projetos",
-    company: "Operadora Eólica [Substituir pelo nome real]",
-  },
-  {
-    id: "t3",
-    quote:
-      "Finalmente um parceiro que entende o setor eólico de verdade. Eles não são uma agência de viagem: são uma extensão da nossa operação.",
-    name: "Roberto S.",
-    role: "CEO",
-    company: "Empresa do Setor Eólico [Substituir pelo nome real]",
   },
 ];

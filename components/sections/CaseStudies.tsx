@@ -42,7 +42,7 @@ export default function CaseStudies() {
 
         {/* Case study cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {caseStudies.slice(0, 3).map((study, i) => (
+          {caseStudies.slice(0, 4).map((study, i) => (
             <motion.div
               key={study.id}
               initial={{ opacity: 0, y: 30 }}

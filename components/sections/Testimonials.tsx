@@ -69,14 +69,6 @@ export default function Testimonials() {
           ))}
         </div>
 
-        <motion.p
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          className="text-center text-vow-muted/50 text-xs mt-8 italic"
-        >
-          * Segundo e terceiro depoimentos são placeholder — substitua pelos reais antes do lançamento.
-        </motion.p>
       </div>
     </section>
   );
