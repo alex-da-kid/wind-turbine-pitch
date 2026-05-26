@@ -151,4 +151,37 @@ export const caseStudies: CaseStudy[] = [
       },
     ],
   },
+  {
+    id: "case-8",
+    slug: "mobilizacao-el-salvador-carnet-residencia",
+    title: "12 Técnicos Liberados para Operar em El Salvador na Metade do Prazo Usual",
+    tag: "Regularização Acelerada",
+    route: "Brasil → El Salvador",
+    challenge:
+      "Em 2023, uma empresa brasileira do setor eólico precisava mobilizar 12 técnicos para dois parques eólicos próximos a Metapán. Cada dia de espera pelas permissões locais representava custo direto com equipe em stand-by — hospedagem, per diem e produtividade zero.",
+    outcome:
+      "Permissões aprovadas em 14 dias (prazo usual: ~30 dias). 16 dias de stand-by evitados, 12 técnicos regularizados, 100% de aprovação e zero negativas migratórias.",
+    stat: "14",
+    statLabel: "Dias para aprovação (prazo usual: ~30 dias)",
+    date: "2023",
+    readTime: "4 min",
+    fullContent: [
+      {
+        heading: "O contexto",
+        body: "Em 2023, uma empresa brasileira do setor eólico em expansão internacional precisava mobilizar 12 técnicos para atuação em dois parques eólicos próximos à região de Metapán, em El Salvador. O desafio ia além da entrada no país: para iniciar qualquer atividade em campo, os técnicos precisavam obter localmente o Carnet de Residencia Temporal, documento que autorizava a residência e o trabalho temporário no país.",
+      },
+      {
+        heading: "O desafio",
+        body: "Como o processo só podia ser protocolado após a chegada dos profissionais e exigia comparecimento presencial perante a autoridade migratória, cada dia de espera representava custo direto com hospedagem, per diem e equipe em stand-by. O prazo usual para aprovação girava em torno de 30 dias — tempo que o cliente precisava reduzir para manter o cronograma dos projetos em campo.",
+      },
+      {
+        heading: "Nossa abordagem",
+        body: "A Vow antecipou toda a organização documental antes da viagem, preparando certidões, apostilamentos, contratos, cartas de suporte da empresa brasileira, cartas de endosso da empresa local e demais documentos exigidos. Também estruturamos a parceria com um escritório local responsável pela interface com a autoridade migratória, viabilizando o agendamento rápido dos expedientes presenciais, protocolo documental e coleta de biometria. Além da regularização migratória, a Vow coordenou a locação local de três veículos 4x4, necessários para o deslocamento seguro até os parques eólicos — cuidando da seleção do fornecedor, contrato, pagamento, seguro e suporte durante a operação, inclusive em situações com problemas mecânicos.",
+      },
+      {
+        heading: "O resultado",
+        body: "As permissões foram aprovadas em 14 dias, contra um prazo usual de aproximadamente 30 dias — reduzindo em cerca de 16 dias o período improdutivo da equipe. Os 12 técnicos foram liberados para iniciar as atividades antes do previsto e em total conformidade com as exigências legais e do cliente final. 100% de aprovação das permissões e zero negativas migratórias, garantindo ao cliente segurança jurídica, redução de custos operacionais e continuidade do projeto em campo.",
+      },
+    ],
+  },
 ];
