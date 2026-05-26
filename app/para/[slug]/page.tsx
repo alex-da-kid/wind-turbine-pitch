@@ -10,7 +10,6 @@ import Differentiator from "@/components/sections/Differentiator";
 import HowItWorks from "@/components/sections/HowItWorks";
 import Commitment from "@/components/sections/Commitment";
 import CaseStudies from "@/components/sections/CaseStudies";
-import Testimonials from "@/components/sections/Testimonials";
 import Authority from "@/components/sections/Authority";
 import Team from "@/components/sections/Team";
 import FinalCTA from "@/components/sections/FinalCTA";
@@ -57,7 +56,6 @@ export default async function ClientPage({ params }: Props) {
         <Differentiator />
         <HowItWorks />
         <Commitment />
-        <Testimonials />
         <Team />
         <FinalCTA whatsappUrl={whatsappUrl} />
       </main>
