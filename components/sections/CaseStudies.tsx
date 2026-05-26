@@ -4,7 +4,11 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { caseStudies } from "@/lib/data/case-studies";
 
-export default function CaseStudies() {
+export default function CaseStudies({ slugs }: { slugs?: string[] }) {
+  const displayed = slugs
+    ? caseStudies.filter((c) => slugs.includes(c.slug))
+    : caseStudies.slice(0, 4);
+
   return (
     <section id="cases" className="bg-gray-50 py-24 lg:py-32">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
@@ -42,7 +46,7 @@ export default function CaseStudies() {
 
         {/* Case study cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {caseStudies.slice(0, 4).map((study, i) => (
+          {displayed.map((study, i) => (
             <motion.div
               key={study.id}
               initial={{ opacity: 0, y: 30 }}

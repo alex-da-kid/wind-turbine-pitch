@@ -27,9 +27,11 @@ const icons = [
   </svg>,
 ];
 
-export default function PainPoints() {
+export default function PainPoints({ ids }: { ids?: string[] }) {
   const ref = useRef(null);
   const inView = useInView(ref, { once: true, margin: "-80px" });
+
+  const filtered = ids ? painPoints.filter((p) => ids.includes(p.id)) : painPoints;
 
   return (
     <section className="bg-gray-50 py-24 lg:py-32">
@@ -58,28 +60,31 @@ export default function PainPoints() {
 
         {/* Cards grid */}
         <div ref={ref} className="grid grid-cols-1 md:grid-cols-2 gap-5">
-          {painPoints.map((point, i) => (
-            <motion.div
-              key={point.id}
-              initial={{ opacity: 0, y: 30 }}
-              animate={inView ? { opacity: 1, y: 0 } : {}}
-              transition={{ duration: 0.5, delay: i * 0.1 }}
-              className="bg-white border border-gray-200 rounded-xl p-7 flex gap-5 hover:border-blue-300 hover:shadow-sm transition-all group"
-            >
-              {/* Left accent bar */}
-              <div className="w-0.5 bg-vow-primary/20 group-hover:bg-vow-primary rounded-full flex-shrink-0 transition-colors" />
+          {filtered.map((point, i) => {
+            const iconIndex = painPoints.indexOf(point);
+            return (
+              <motion.div
+                key={point.id}
+                initial={{ opacity: 0, y: 30 }}
+                animate={inView ? { opacity: 1, y: 0 } : {}}
+                transition={{ duration: 0.5, delay: i * 0.1 }}
+                className="bg-white border border-gray-200 rounded-xl p-7 flex gap-5 hover:border-blue-300 hover:shadow-sm transition-all group"
+              >
+                {/* Left accent bar */}
+                <div className="w-0.5 bg-vow-primary/20 group-hover:bg-vow-primary rounded-full flex-shrink-0 transition-colors" />
 
-              <div>
-                <div className="text-vow-primary mb-3">{icons[i]}</div>
-                <h3 className="text-vow-text font-medium text-lg mb-2 leading-snug">
-                  {point.headline}
-                </h3>
-                <p className="text-vow-muted text-sm leading-relaxed">
-                  {point.body}
-                </p>
-              </div>
-            </motion.div>
-          ))}
+                <div>
+                  <div className="text-vow-primary mb-3">{icons[iconIndex]}</div>
+                  <h3 className="text-vow-text font-medium text-lg mb-2 leading-snug">
+                    {point.headline}
+                  </h3>
+                  <p className="text-vow-muted text-sm leading-relaxed">
+                    {point.body}
+                  </p>
+                </div>
+              </motion.div>
+            );
+          })}
         </div>
       </div>
     </section>
