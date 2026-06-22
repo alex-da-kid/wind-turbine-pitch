@@ -23,6 +23,31 @@ export interface ClientData {
 export const CLIENTS: Record<string, ClientData> = {
   // ─── PRIORITY A — Confirmed US Presence ───────────────────────────────────
 
+  "wtg-offshore": {
+    slug: "wtg-offshore",
+    companyName: "WTG Offshore",
+    companyLocation: "Port of Mostyn, Wales, UK",
+    priority: "A",
+    type: "Blade Inspection & Integrity Management",
+    size: "Pequeno-médio porte",
+    website: "wtg-offshore.com",
+    usSignal: "Serviços declarados como 'Worldwide'; mercado offshore dos EUA (costa atlântica) é destino natural para seus técnicos IRATA",
+    founded: "Estabelecida",
+    heroTag: "Blade inspection & integrity management — deploy mundial",
+    heroHeadline: "Vow Vistos + WTG Offshore: seus técnicos IRATA no projeto certo, no prazo certo.",
+    heroSubheadline:
+      "A WTG Offshore promete resposta imediata e deploy mundial. A Vow Vistos garante que vistos, autorizações de trabalho e logística de crew não sejam o que quebra essa promessa.",
+    pitch:
+      "A WTG Offshore construiu um sistema de inspeção e integridade de pás (BIIM) reconhecido internacionalmente e promete deploy 'Worldwide, Instant'. Mas mobilizar técnicos IRATA certificados — engenheiros de pás, supervisores QA/QC, instrutores de reparo complexo — para projetos nos EUA, Brasil ou qualquer outro mercado exige mais do que expertise técnica: exige autorização migratória, coordenação de CTV e suporte em campo. A Vow Vistos é a camada operacional que transforma a promessa 'Worldwide' em realidade — sem atrasos consulares, sem surpresas logísticas.",
+    painFocus: ["downtime", "bureaucracy", "support"],
+    caseStudySlugs: ["visto-b1-eua-98-aprovacoes", "mobilizacao-mexico-blade-repair"],
+    whatsappMessage:
+      "Olá Guilherme, sou da WTG Offshore e gostaria de entender como a Vow Vistos pode apoiar a mobilização dos nossos técnicos para projetos internacionais.",
+    metaTitle: "Vow Vistos para WTG Offshore | Mobilização Global de Técnicos IRATA",
+    metaDescription:
+      "Suporte especializado em vistos e logística de crew para mobilizações internacionais da WTG Offshore — blade inspection & integrity management.",
+  },
+
   "flex-wind": {
     slug: "flex-wind",
     companyName: "Flex Wind",

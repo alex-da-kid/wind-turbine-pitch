@@ -20,6 +20,49 @@ export interface CompanyIntel {
 }
 
 export const COMPANY_INTEL: Record<string, CompanyIntel> = {
+  "wtg-offshore": {
+    slug: "wtg-offshore",
+    phone: "+44 1745 797269",
+    phone2: "+44 7810 333 397",
+    email: "info@wtg-offshore.com",
+    address: "WTG Offshore Ltd — The Port of Mostyn, Mostyn, Holywell, Flintshire, CH8 9HE, Wales, UK",
+    website: "wtg-offshore.com",
+    services: [
+      "Blade Inspection & Integrity Management (BIIM) — sistema proprietário",
+      "Biim TRI-Coat — revestimento de proteção de borda de ataque (produto proprietário)",
+      "Inspeções de desempenho de garantia OEM (Siemens/Vestas) durante período de garantia",
+      "Supervisão QA/QC de programas de reparo EOW (End of Warranty)",
+      "UAV GVI (Inspeção Visual Geral) e CVI (Inspeção Visual Próxima) por acesso de corda",
+      "Treinamento de instrutores de reparo complexo (GBS/Siemens/LM — certificação de fábrica)",
+      "Suporte de engenharia de pás online/sob demanda (remoto ou presencial)",
+      "Fornecimento de supervisores IRATA Nível 3",
+      "Fornecimento de técnicos de reparo composto IRATA certificados",
+      "CTV dedicado com oficina de composites/inspeção a bordo",
+    ],
+    keyPeople: [
+      { name: "Equipe IRATA Nível 3", title: "Supervisores de inspeção/reparo — mín. 5 anos offshore" },
+      { name: "Blade Engineers", title: "Mínimo 8 anos de experiência" },
+      { name: "QA/QC Instructors", title: "Mínimo 4 anos de background QA/QC" },
+      { name: "Complex Repair Trainers", title: "Treinados em fábrica (GBS/Siemens/LM), mín. 6 anos" },
+    ],
+    companyFacts: [
+      "Sede: Port of Mostyn, Flintshire, País de Gales, Reino Unido",
+      "Membro IRATA — certificação de acesso por corda offshore",
+      "Acreditação DNV GL ISO 9001 & ISO 18001 para inspeção/reparo de pás",
+      "Serviços declarados como 'Worldwide' — deploy global de técnicos",
+      "Certificados OEM: Siemens Blade C/Consuta 2, Vestas Advanced, LM Structural",
+      "Treinamento disponível: presencial, online e sob demanda",
+      "Foco em prevenção de erosão de borda de ataque (leading edge erosion)",
+    ],
+    currentProjects: [
+      "Inspeções EOW (End of Warranty) para asset owners Siemens/Vestas",
+      "Programas preventivos BIIM para operadores de frotas offshore",
+      "Treinamento de técnicos proprietários de clientes em reparo complexo",
+      "Aplicação de Biim TRI-Coat para proteção de borda de ataque",
+    ],
+    notes: "Empresa britânica com DNA de deploy internacional — certamente mobiliza técnicos para projetos nos EUA (offshore costa atlântica) e potencialmente para o Brasil. Contato ideal: responsável por mobilização de pessoal / Head of Operations.",
+  },
+
   "flex-wind": {
     slug: "flex-wind",
     phone: "+55 85 3077-7777",
