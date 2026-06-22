@@ -9,6 +9,7 @@ import Commitment from "@/components/sections/Commitment";
 import CaseStudies from "@/components/sections/CaseStudies";
 import Authority from "@/components/sections/Authority";
 import Testimonials from "@/components/sections/Testimonials";
+import AboutUs from "@/components/sections/AboutUs";
 import Team from "@/components/sections/Team";
 import FinalCTA from "@/components/sections/FinalCTA";
 
@@ -26,6 +27,7 @@ export default function Home() {
         <HowItWorks />
         <Commitment />
         <Testimonials />
+        <AboutUs />
         <Team />
         <FinalCTA />
       </main>

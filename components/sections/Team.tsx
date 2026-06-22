@@ -2,6 +2,23 @@
 
 import { motion } from "framer-motion";
 
+const team = [
+  {
+    initials: "AP",
+    name: "Alex Podmore",
+    title: "Director",
+    languages: ["English", "Português"],
+    bio: "Cofundador da Vow Vistos com formação em Economia. Lidera a visão estratégica da empresa com foco em criação de sistemas, gestão de processos e eficiência operacional.",
+  },
+  {
+    initials: "GN",
+    name: "Guilherme Nielsen",
+    title: "Diretor Operacional",
+    languages: ["Português", "English", "Español"],
+    bio: "Cofundador com formação em Administração e aproximadamente 10 anos de vivência na Califórnia. Lidera os projetos de imigração e o departamento de viagens, com expertise em vistos, permissões de trabalho e logística internacional.",
+  },
+];
+
 export default function Team() {
   return (
     <section className="bg-white py-24 lg:py-32">
@@ -28,53 +45,50 @@ export default function Team() {
           </motion.h2>
         </div>
 
-        {/* Profile card */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5, delay: 0.1 }}
-          className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center bg-gray-50 border border-gray-200 rounded-2xl p-10 lg:p-14"
-        >
-          {/* Photo placeholder */}
-          <div className="flex flex-col items-center lg:items-start gap-6">
-            <div className="w-40 h-40 rounded-2xl bg-vow-primary/8 border border-vow-primary/15 flex items-center justify-center flex-shrink-0">
-              <span className="text-4xl font-bold text-vow-primary">GN</span>
-            </div>
-            <div>
-              <h3 className="text-2xl font-medium text-vow-text mb-1">
-                Guilherme Nielsen
-              </h3>
-              <p className="text-vow-primary text-sm font-medium mb-3">
-                Co-Founder, Vow Vistos
-              </p>
-              {/* Languages */}
-              <div className="flex flex-wrap gap-2">
-                {["Português", "English", "Español"].map((lang) => (
-                  <span
-                    key={lang}
-                    className="bg-vow-primary/8 border border-vow-primary/20 text-vow-primary text-xs font-medium px-3 py-1 rounded-full"
-                  >
-                    {lang}
+        {/* Profile cards */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          {team.map((member, i) => (
+            <motion.div
+              key={member.name}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: i * 0.1 }}
+              className="bg-gray-50 border border-gray-200 rounded-2xl p-10"
+            >
+              <div className="flex items-center gap-5 mb-6">
+                <div className="w-20 h-20 rounded-xl bg-vow-primary/8 border border-vow-primary/15 flex items-center justify-center flex-shrink-0">
+                  <span className="text-xl font-bold text-vow-primary">
+                    {member.initials}
                   </span>
-                ))}
+                </div>
+                <div>
+                  <h3 className="text-xl font-medium text-vow-text mb-0.5">
+                    {member.name}
+                  </h3>
+                  <p className="text-vow-primary text-sm font-medium mb-3">
+                    {member.title}
+                  </p>
+                  <div className="flex flex-wrap gap-2">
+                    {member.languages.map((lang) => (
+                      <span
+                        key={lang}
+                        className="bg-vow-primary/8 border border-vow-primary/20 text-vow-primary text-xs font-medium px-3 py-1 rounded-full"
+                      >
+                        {lang}
+                      </span>
+                    ))}
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-
-          {/* Bio */}
-          <div className="space-y-4 text-vow-muted text-base leading-relaxed">
-            <p>
-              [Guilherme — adicione aqui uma introdução pessoal. Fale sobre sua trajetória, o que te levou a criar a Vow Vistos e por que o setor eólico é a sua especialidade.]
-            </p>
-            <p>
-              [Fale sobre sua experiência prática com mobilização internacional, os mercados que você conhece de perto e o que diferencia sua abordagem da de uma agência tradicional.]
-            </p>
-            <p>
-              [Encerre com algo pessoal: o que te motiva nesse trabalho e como você enxerga a parceria com os clientes da Vow Vistos.]
-            </p>
-          </div>
-        </motion.div>
+              <div className="border-t border-gray-200 pt-6">
+                <p className="text-vow-muted text-base leading-relaxed">
+                  {member.bio}
+                </p>
+              </div>
+            </motion.div>
+          ))}
+        </div>
       </div>
     </section>
   );
