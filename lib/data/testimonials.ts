@@ -18,7 +18,7 @@ export const testimonials: Testimonial[] = [
   {
     id: "t2",
     quote:
-      "Desde que conheci a Vow, as demandas chegam e é só encaminhar — tudo flui naturalmente, sem dor de cabeça, sem stress. Qualquer tipo de visto, passagem para qualquer país, resolvem muito rápido com acompanhamento completo até o desembarque. Com a Vow, vamos cada vez mais longe e o mundo fica pequeno!",
+      "Desde que conheci a Vow, as demandas chegam e é só encaminhar para eles, tudo flui naturalmente sem dor de cabeça, sem stress. Qualquer tipo de visto, passagem para qualquer país, resolvem muito rápido com acompanhamento completo até o desembarque. Com a Vow vamos cada vez mais longe e o mundo fica pequeno!",
     name: "Marcio Moraes",
     role: "CEO LATAM",
     company: "All American Wind",
@@ -26,7 +26,7 @@ export const testimonials: Testimonial[] = [
   {
     id: "t3",
     quote:
-      "We would highly recommend Vow Vistos to everyone who needs legal immigration services. Guilherme and the team helped us get results where others failed. Since we started working together, we've grown substantially — 32 employees and a clientele that keeps expanding.",
+      "We would highly recommend Vow Vistos to everyone who needs legal immigration services. Guilherme and the team helped us get results where others failed. Since we started working together we have grown substantially, now 32 employees and a clientele that keeps expanding.",
     name: "Michael Lee",
     role: "Customer Service & Sales",
     company: "CICNDT",
