@@ -1,17 +1,20 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
 
 const team = [
   {
-    initials: "AP",
+    photo: "/team-alex.png",
+    photoPosition: "50% 27%",
+    photoScale: 1.75,
     name: "Alex Podmore",
     title: "Director",
     languages: ["English", "Português"],
     bio: "Cofundador da Vow Vistos com formação em Economia. Lidera a visão estratégica da empresa com foco em criação de sistemas, gestão de processos e eficiência operacional.",
   },
   {
-    initials: "GN",
+    photo: "/team-guilherme.jpeg",
     name: "Guilherme Nielsen",
     title: "Diretor Operacional",
     languages: ["Português", "English", "Español"],
@@ -57,10 +60,21 @@ export default function Team() {
               className="bg-gray-50 border border-gray-200 rounded-2xl p-10"
             >
               <div className="flex items-center gap-5 mb-6">
-                <div className="w-20 h-20 rounded-xl bg-vow-primary/8 border border-vow-primary/15 flex items-center justify-center flex-shrink-0">
-                  <span className="text-xl font-bold text-vow-primary">
-                    {member.initials}
-                  </span>
+                <div className="relative w-20 h-20 rounded-xl overflow-hidden border border-vow-primary/15 flex-shrink-0">
+                  <Image
+                    src={member.photo}
+                    alt={member.name}
+                    fill
+                    className="object-cover"
+                    style={
+                      member.photoScale
+                        ? {
+                            objectPosition: member.photoPosition,
+                            transform: `scale(${member.photoScale})`,
+                          }
+                        : undefined
+                    }
+                  />
                 </div>
                 <div>
                   <h3 className="text-xl font-medium text-vow-text mb-0.5">
