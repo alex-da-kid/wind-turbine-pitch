@@ -3,7 +3,11 @@
 import { motion } from "framer-motion";
 import { testimonials } from "@/lib/data/testimonials";
 
-export default function Testimonials() {
+export default function Testimonials({ ids }: { ids?: string[] }) {
+  const displayed = ids
+    ? testimonials.filter((t) => ids.includes(t.id))
+    : testimonials;
+
   return (
     <section className="bg-white py-24 lg:py-32">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
@@ -30,8 +34,14 @@ export default function Testimonials() {
         </div>
 
         {/* Testimonial cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {testimonials.map((t, i) => (
+        <div
+          className={`grid grid-cols-1 gap-6 ${
+            displayed.length === 2
+              ? "md:grid-cols-2 max-w-3xl mx-auto"
+              : "md:grid-cols-3"
+          }`}
+        >
+          {displayed.map((t, i) => (
             <motion.div
               key={t.id}
               initial={{ opacity: 0, y: 30 }}

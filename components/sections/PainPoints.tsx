@@ -1,7 +1,7 @@
 "use client";
 
 import { motion, useInView } from "framer-motion";
-import { useRef } from "react";
+import { useRef, type ReactNode } from "react";
 import { painPoints } from "@/lib/data/pain-points";
 
 const icons = [
@@ -27,11 +27,24 @@ const icons = [
   </svg>,
 ];
 
-export default function PainPoints({ ids }: { ids?: string[] }) {
+export default function PainPoints({
+  ids,
+  headline,
+}: {
+  ids?: string[];
+  headline?: ReactNode;
+}) {
   const ref = useRef(null);
   const inView = useInView(ref, { once: true, margin: "-80px" });
 
   const filtered = ids ? painPoints.filter((p) => ids.includes(p.id)) : painPoints;
+
+  const defaultHeadline = (
+    <>
+      O setor eólico{" "}
+      <span className="text-vow-text">não pode esperar.</span>
+    </>
+  );
 
   return (
     <section className="bg-gray-50 py-24 lg:py-32">
@@ -53,8 +66,7 @@ export default function PainPoints({ ids }: { ids?: string[] }) {
             transition={{ duration: 0.5 }}
             className="text-3xl md:text-4xl lg:text-5xl font-light text-vow-primary leading-tight"
           >
-            O setor eólico{" "}
-            <span className="text-vow-text">não pode esperar.</span>
+            {headline ?? defaultHeadline}
           </motion.h2>
         </div>
 

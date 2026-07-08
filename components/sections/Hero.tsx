@@ -4,13 +4,19 @@ import { type ReactNode } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
+interface HeroStat {
+  value: string;
+  label: string;
+}
+
 interface HeroProps {
   tag?: string;
   headline?: ReactNode;
   subheadline?: string;
+  stats?: HeroStat[];
 }
 
-export default function Hero({ tag, headline, subheadline }: HeroProps) {
+export default function Hero({ tag, headline, subheadline, stats }: HeroProps) {
   const defaultTag = "Especialistas no mercado americano";
   const defaultHeadline = (
     <>
@@ -97,11 +103,13 @@ export default function Hero({ tag, headline, subheadline }: HeroProps) {
           transition={{ duration: 0.6, delay: 0.6 }}
           className="grid grid-cols-3 gap-6 max-w-xl mx-auto mt-16 pt-10 border-t border-white/20"
         >
-          {[
-            { value: "24/7", label: "Suporte operacional" },
-            { value: "+5", label: "Anos no setor eólico" },
-            { value: "100%", label: "Atendimento humano" },
-          ].map((stat) => (
+          {(
+            stats ?? [
+              { value: "24/7", label: "Suporte operacional" },
+              { value: "+5", label: "Anos no setor eólico" },
+              { value: "100%", label: "Atendimento humano" },
+            ]
+          ).map((stat) => (
             <div key={stat.label} className="text-center">
               <div className="text-2xl font-bold text-white mb-1">
                 {stat.value}

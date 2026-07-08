@@ -13,7 +13,7 @@ export const services: ServiceItem[] = [
     icon: "/icon-globe.svg",
     title: "Imigração Corporativa",
     description:
-      "Estruturamos processos migratórios para empresas do setor eólico com foco em agilidade, conformidade e mitigação de riscos. Com especialização no mercado americano, aceleramos vistos e reduzimos interrupções operacionais.",
+      "Estruturamos processos migratórios para empresas com operações internacionais, com foco em agilidade, conformidade e mitigação de riscos. Com especialização no mercado americano, aceleramos vistos e reduzimos interrupções operacionais.",
     items: [
       "Vistos de trabalho temporário",
       "Estratégia migratória para os EUA",

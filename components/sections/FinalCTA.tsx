@@ -7,9 +7,13 @@ const DEFAULT_WHATSAPP_URL =
 
 interface FinalCTAProps {
   whatsappUrl?: string;
+  paragraph?: string;
 }
 
-export default function FinalCTA({ whatsappUrl }: FinalCTAProps = {}) {
+const DEFAULT_PARAGRAPH =
+  "A Vow Vistos ajuda empresas do setor eólico a mobilizar equipes internacionais com agilidade, estratégia e suporte operacional real.";
+
+export default function FinalCTA({ whatsappUrl, paragraph }: FinalCTAProps = {}) {
   const WHATSAPP_URL = whatsappUrl ?? DEFAULT_WHATSAPP_URL;
   return (
     <section
@@ -49,8 +53,7 @@ export default function FinalCTA({ whatsappUrl }: FinalCTAProps = {}) {
           transition={{ duration: 0.6, delay: 0.1 }}
           className="text-vow-muted text-lg max-w-2xl mx-auto leading-relaxed mb-12"
         >
-          A Vow Vistos ajuda empresas do setor eólico a mobilizar equipes
-          internacionais com agilidade, estratégia e suporte operacional real.
+          {paragraph ?? DEFAULT_PARAGRAPH}
         </motion.p>
 
         {/* WhatsApp CTA */}

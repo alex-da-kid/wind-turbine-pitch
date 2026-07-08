@@ -56,6 +56,7 @@ export default async function ClientPage({ params }: Props) {
           tag={client.heroTag}
           headline={client.heroHeadline}
           subheadline={client.heroSubheadline}
+          stats={client.heroStats}
         />
 
         {/* 2. Pitch — why we're reaching out */}
@@ -87,16 +88,18 @@ export default async function ClientPage({ params }: Props) {
         </section>
 
         {/* 3. Client logos — social proof */}
-        <Authority />
+        <Authority headline={client.authorityHeadline} />
 
         {/* 4. Pain points */}
-        <PainPoints />
+        {!client.hidePainPoints && (
+          <PainPoints headline={client.painPointsHeadline} />
+        )}
 
         {/* 5. Solutions — O que fazemos */}
-        <Solutions />
+        <Solutions iconOverrides={client.solutionsIcons} />
 
         {/* 6. Differentiator — Nosso diferencial */}
-        <Differentiator />
+        <Differentiator paragraph={client.differentiatorParagraph} />
 
         {/* 7. How it works */}
         <HowItWorks />
@@ -105,18 +108,21 @@ export default async function ClientPage({ params }: Props) {
         <Commitment />
 
         {/* 9. Relevant case studies */}
-        <CaseStudies slugs={client.caseStudySlugs} />
+        <CaseStudies slugs={client.caseStudySlugs} subheading={client.caseStudiesSubheading} />
 
         {/* 10. Testimonials */}
-        <Testimonials />
+        <Testimonials ids={client.testimonialIds} />
 
         {/* 11. Team */}
         <Team />
 
         {/* 12. Personalized CTA */}
-        <FinalCTA whatsappUrl={whatsappUrl} />
+        <FinalCTA whatsappUrl={whatsappUrl} paragraph={client.finalCtaParagraph} />
       </main>
-      <Footer />
+      <Footer
+        tagline={client.footerTagline}
+        bottomTagline={client.footerBottomTagline}
+      />
     </>
   );
 }

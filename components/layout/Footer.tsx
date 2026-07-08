@@ -1,7 +1,15 @@
 import Image from "next/image";
 
-export default function Footer() {
+interface FooterProps {
+  tagline?: string;
+  bottomTagline?: string;
+}
+
+export default function Footer({ tagline, bottomTagline }: FooterProps = {}) {
   const year = new Date().getFullYear();
+  const defaultTagline =
+    "Mobilização internacional para operações do setor eólico. Imigração, logística e suporte operacional.";
+  const defaultBottomTagline = "Mobilização internacional para o setor eólico.";
 
   return (
     <footer style={{ backgroundColor: "#1f3144" }}>
@@ -19,8 +27,7 @@ export default function Footer() {
               />
             </div>
             <p className="text-white/60 text-sm leading-relaxed max-w-xs">
-              Mobilização internacional para operações do setor eólico.
-              Imigração, logística e suporte operacional.
+              {tagline ?? defaultTagline}
             </p>
           </div>
 
@@ -78,7 +85,7 @@ export default function Footer() {
             © {year} Vow Vistos. Todos os direitos reservados.
           </p>
           <p className="text-white/40 text-xs">
-            Mobilização internacional para o setor eólico.
+            {bottomTagline ?? defaultBottomTagline}
           </p>
         </div>
       </div>

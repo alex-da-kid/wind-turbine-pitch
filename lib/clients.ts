@@ -12,12 +12,27 @@ export interface ClientData {
   heroTag: string;
   heroHeadline: string;
   heroSubheadline: string;
+  heroStats?: { value: string; label: string }[];
   pitch: string;
   painFocus: string[];
+  /** Set true to omit the "O problema" / pain-points section for this client. */
+  hidePainPoints?: boolean;
   caseStudySlugs: string[];
   whatsappMessage: string;
   metaTitle: string;
   metaDescription: string;
+  /** Overrides for shared sections whose default copy is wind-energy-specific.
+   *  Omit for wind-energy prospects; set for non-wind corporate prospects. */
+  authorityHeadline?: string;
+  painPointsHeadline?: string;
+  differentiatorParagraph?: string;
+  caseStudiesSubheading?: string;
+  finalCtaParagraph?: string;
+  testimonialIds?: string[];
+  footerTagline?: string;
+  footerBottomTagline?: string;
+  /** Maps a service id (see lib/data/services.ts) to a replacement icon path. */
+  solutionsIcons?: Record<string, string>;
 }
 
 export const CLIENTS: Record<string, ClientData> = {
@@ -829,5 +844,53 @@ export const CLIENTS: Record<string, ClientData> = {
     metaTitle: "Vow Vistos para Goldwind Americas | Mobilização Brasil–EUA",
     metaDescription:
       "Suporte especializado em vistos e logística para as mobilizações da Goldwind Americas entre Brasil e EUA.",
+  },
+
+  // ─── Non-Wind Corporate Prospects ──────────────────────────────────────────
+
+  calmap: {
+    slug: "calmap",
+    companyName: "Calmap Ind. de Calcário Ltda",
+    companyLocation: "São Geraldo do Araguaia, PA / Fortaleza, CE",
+    priority: "C",
+    type: "Mineração — Calcário Agrícola & Fertilizantes Minerais",
+    size: "Médio porte (grupo WJR Participações)",
+    website: "calmap.com.br",
+    founded: "2019",
+    growthSignal:
+      "Grupo WJR Participações com 20 anos de experiência em mineração; operação em expansão com a nova linha de fertilizantes Calmap Mix",
+    heroTag: "Mineração e agronegócio — mobilidade sem complicação",
+    heroHeadline: "Vow Vistos + Calmap: sua equipe e seus parceiros internacionais, prontos para operar.",
+    heroSubheadline:
+      "A Vow Vistos apoia empresas de mineração e agronegócio com mobilização internacional, imigração corporativa, logística de viagem e suporte operacional 24/7 — para quem opera longe dos grandes centros e não pode parar.",
+    heroStats: [
+      { value: "24/7", label: "Suporte operacional" },
+      { value: "+5", label: "Anos em mobilização internacional" },
+      { value: "100%", label: "Atendimento humano" },
+    ],
+    pitch:
+      "A Calmap produz calcário agrícola e fertilizantes minerais a partir de uma operação em São Geraldo do Araguaia — a mais de 2.000 km da sede administrativa em Fortaleza. Isso já é, por si só, um desafio logístico constante. Quando a operação também depende de equipamentos, tecnologia ou especialistas técnicos vindos do exterior, ou quando a diretoria e o time comercial precisam representar a empresa em feiras e negociações internacionais, a mobilização deixa de ser rotina de RH e passa a exigir estratégia migratória e logística dedicada. A Vow Vistos existe para isso: para que vistos, passagens, hospedagem e suporte em campo nunca sejam o motivo de um atraso na sua produção.",
+    painFocus: ["bureaucracy", "support", "readiness"],
+    hidePainPoints: true,
+    caseStudySlugs: ["mobilizacao-argentina-lockdown", "visto-b1-eua-98-aprovacoes"],
+    whatsappMessage:
+      "Olá Guilherme, sou da Calmap e gostaria de entender como a Vow Vistos pode apoiar nossa operação com mobilização internacional e logística para nossa equipe.",
+    metaTitle: "Vow Vistos para Calmap | Mobilização Internacional para Mineração e Agronegócio",
+    metaDescription:
+      "Imigração corporativa, logística de viagem e suporte 24/7 para as operações da Calmap — da mina em São Geraldo do Araguaia à sede em Fortaleza.",
+    authorityHeadline: "Empresas que já mobilizamos internacionalmente.",
+    differentiatorParagraph:
+      "A Vow Vistos foi construída para atender operações internacionais de empresas que não podem depender de improviso. Entendemos a urgência operacional, os desafios migratórios e a complexidade logística envolvida na mobilização de equipes e parceiros internacionais.",
+    caseStudiesSubheading: "Resultados reais em operações internacionais complexas.",
+    finalCtaParagraph:
+      "A Vow Vistos ajuda empresas de diversos setores a mobilizar equipes e parceiros internacionais com agilidade, estratégia e suporte operacional real.",
+    testimonialIds: ["t2", "t3"],
+    footerTagline:
+      "Mobilização internacional para empresas de mineração e agronegócio. Imigração, logística e suporte operacional.",
+    footerBottomTagline: "Mobilização internacional para operações longe dos grandes centros.",
+    solutionsIcons: {
+      travel: "/icon-briefcase.svg",
+      operational: "/icon-headset.svg",
+    },
   },
 };

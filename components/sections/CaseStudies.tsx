@@ -4,10 +4,17 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { caseStudies } from "@/lib/data/case-studies";
 
-export default function CaseStudies({ slugs }: { slugs?: string[] }) {
+export default function CaseStudies({
+  slugs,
+  subheading,
+}: {
+  slugs?: string[];
+  subheading?: string;
+}) {
   const displayed = slugs
     ? caseStudies.filter((c) => slugs.includes(c.slug))
     : caseStudies.slice(0, 4);
+  const defaultSubheading = "Resultados reais em operações reais do setor eólico.";
 
   return (
     <section id="cases" className="bg-gray-50 py-24 lg:py-32">
@@ -40,7 +47,7 @@ export default function CaseStudies({ slugs }: { slugs?: string[] }) {
             viewport={{ once: true }}
             className="text-vow-muted text-sm max-w-xs text-right hidden md:block"
           >
-            Resultados reais em operações reais do setor eólico.
+            {subheading ?? defaultSubheading}
           </motion.p>
         </div>
 

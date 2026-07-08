@@ -10,7 +10,10 @@ const trustPoints = [
   "Modelo de trabalho alinhado aos seus resultados. Se a sua operação não funciona, a nossa também não.",
 ];
 
-export default function Differentiator() {
+export default function Differentiator({ paragraph }: { paragraph?: string }) {
+  const defaultParagraph =
+    "A Vow Vistos foi construída para atender operações internacionais do setor eólico. Entendemos a urgência operacional, os desafios migratórios e a complexidade logística envolvida na mobilização global de equipes técnicas.";
+
   return (
     <section className="bg-gray-50 py-24 lg:py-32">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
@@ -58,10 +61,7 @@ export default function Differentiator() {
               transition={{ duration: 0.5, delay: 0.1 }}
               className="text-vow-muted text-base leading-relaxed mb-8"
             >
-              A Vow Vistos foi construída para atender operações internacionais
-              do setor eólico. Entendemos a urgência operacional, os desafios
-              migratórios e a complexidade logística envolvida na mobilização
-              global de equipes técnicas.
+              {paragraph ?? defaultParagraph}
             </motion.p>
             <motion.p
               initial={{ opacity: 0, y: 20 }}

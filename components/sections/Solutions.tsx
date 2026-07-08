@@ -4,7 +4,11 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { services } from "@/lib/data/services";
 
-export default function Solutions() {
+export default function Solutions({
+  iconOverrides,
+}: {
+  iconOverrides?: Record<string, string>;
+}) {
   return (
     <section id="servicos" className="bg-white py-24 lg:py-32">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
@@ -42,7 +46,7 @@ export default function Solutions() {
               className="relative rounded-xl p-8 border bg-gray-50 border-gray-200 hover:border-blue-300 hover:shadow-sm transition-all group"
             >
               <Image
-                src={service.icon}
+                src={iconOverrides?.[service.id] ?? service.icon}
                 alt=""
                 width={52}
                 height={52}

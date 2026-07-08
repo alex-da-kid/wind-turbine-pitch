@@ -1,5 +1,6 @@
 "use client";
 
+import { type ReactNode } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
@@ -19,7 +20,14 @@ const logos = [
   { file: "Logo-Wind-Com.svg", name: "Wind Com" },
 ];
 
-export default function Authority() {
+export default function Authority({ headline }: { headline?: ReactNode }) {
+  const defaultHeadline = (
+    <>
+      Empresas do setor eólico{" "}
+      <span className="text-vow-text">que já mobilizamos.</span>
+    </>
+  );
+
   return (
     <section className="bg-gray-50 py-24 lg:py-32 border-t border-gray-200">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
@@ -40,8 +48,7 @@ export default function Authority() {
             transition={{ duration: 0.5 }}
             className="text-3xl md:text-4xl lg:text-5xl font-light text-vow-primary leading-tight"
           >
-            Empresas do setor eólico{" "}
-            <span className="text-vow-text">que já mobilizamos.</span>
+            {headline ?? defaultHeadline}
           </motion.h2>
         </div>
 
